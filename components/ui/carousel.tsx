@@ -283,7 +283,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
 		event.currentTarget.style.opacity = "1";
 	};
 
-	const { image, title, description } = slide;
+	const { src, title, description } = slide;
 
 	return (
 		<div className="[perspective:1200px] [transform-style:preserve-3d]">
