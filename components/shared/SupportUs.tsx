@@ -54,7 +54,7 @@ export const SupportUs = () => {
 												alt={"Green background circle"}
 												width={1000}
 												height={1000}
-												className="size-full object-cover"
+												className="size-[200px] object-cover"
 											/>
 											<h3
 												className={`absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] italic text-4xl ${irish.className}`}

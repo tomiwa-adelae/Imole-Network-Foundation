@@ -20,7 +20,7 @@ export const HereToHelp = () => {
 							alt={`${title}'s picture`}
 							width={1000}
 							height={1000}
-							className="size-full object-cover"
+							className="size-[200px] object-cover"
 						/>
 						<h4 className="font-semibold text-black text-xl mt-6">
 							{title}
