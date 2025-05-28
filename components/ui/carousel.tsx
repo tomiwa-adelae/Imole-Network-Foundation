@@ -5,7 +5,7 @@ import { useState, useRef, useId, useEffect } from "react";
 
 interface SlideData {
 	title: string;
-	button: string;
+	description: string;
 	src: string;
 }
 
