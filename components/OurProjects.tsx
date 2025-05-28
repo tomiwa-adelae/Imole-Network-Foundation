@@ -10,7 +10,7 @@ export const OurProjects = () => {
 					Our Impact <span className="text-secondary">in Action</span>
 				</h2>
 				<div className="relative overflow-hidden w-full h-full pb-16 mt-8">
-					<Carousel slides={ourProjects} />
+					<Carousel slide={ourProjects} />
 				</div>
 			</div>
 		</div>
