@@ -226,7 +226,7 @@ import { useState, useRef, useId, useEffect } from "react";
 interface SlideData {
 	name: string;
 	description: string;
-	image: string;
+	src: string;
 }
 
 interface SlideProps {
@@ -317,7 +317,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
 							opacity: current === index ? 1 : 0.5,
 						}}
 						alt={title}
-						src={image}
+						src={src}
 						onLoad={imageLoaded}
 						loading="eager"
 						decoding="sync"
