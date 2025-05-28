@@ -41,7 +41,7 @@ export const SupportUs = () => {
 								</Link>
 							</Button>
 						</div>
-						<div className="flex justify-between items-center gap-10">
+						<div className="flex flex-col md:flex-row justify-between items-center gap-10">
 							{supportUs.map(
 								({ image, suffix, title, number }, index) => (
 									<div

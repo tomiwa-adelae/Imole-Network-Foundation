@@ -18,7 +18,7 @@ export const Footer = () => {
 						</p>
 					</div>
 					{footerDetails.map(({ title, links }, index) => (
-						<div key={index}>
+						<div className="col-span-2 md:col-span-1" key={index}>
 							<h3 className="text-sm md:text-base font-semibold tracking-wider">
 								{title}
 							</h3>

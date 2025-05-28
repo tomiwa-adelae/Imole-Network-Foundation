@@ -151,7 +151,7 @@ export const CTAs = [
 		slug: "/volunteer",
 		label: "Become a Volunteer",
 		buttonIcon: Heart,
-		overlay: "bg-secondary/50",
+		overlay: "bg-secondary/30",
 		hover: "hover:bg-primary",
 	},
 	{

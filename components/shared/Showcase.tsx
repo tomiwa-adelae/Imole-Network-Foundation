@@ -8,7 +8,7 @@ export const Showcase = () => {
 	return (
 		<div className="bg-[#063127] min-h-[80vh] text-white">
 			<Header />
-			<div className="container py-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+			<div className="container pt-12 pb-16 lg:py-8 grid grid-cols-1 md:grid-cols-2 gap-4">
 				<div className="order-2 md:order-1 flex flex-col items-center md:items-start justify-center text-center md:text-left">
 					<h1 className="text-5xl lg:text-7xl font-bold">
 						Offering{" "}
