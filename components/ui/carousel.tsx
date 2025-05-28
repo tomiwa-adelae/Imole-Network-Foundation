@@ -224,7 +224,7 @@ import Image from "next/image";
 import { useState, useRef, useId, useEffect } from "react";
 
 interface SlideData {
-	name: string;
+	title: string;
 	description: string;
 	src: string;
 }
