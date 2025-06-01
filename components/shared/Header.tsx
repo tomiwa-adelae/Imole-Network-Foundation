@@ -8,7 +8,7 @@ import { MobileNavbar } from "@/components/shared/MobileNavbar";
 
 export const Header = () => {
 	return (
-		<header className="py-2 lg:py-4 flex items-center justify-center">
+		<header className="py-4 flex items-center justify-center">
 			<div className="container flex items-center justify-between gap-4">
 				<Logo />
 				<nav className="hidden flex-1 lg:flex items-center justify-center gap-2 lg:gap-8">

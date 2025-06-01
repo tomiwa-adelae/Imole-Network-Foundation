@@ -5,16 +5,16 @@ import { Button } from "@/components/ui/button";
 export const About = () => {
 	return (
 		<div className="bg-[#F3EDDA] relative">
-			<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+			<div className="grid grid-cols-1 md:grid-cols-2">
 				<Image
 					src={"/assets/images/serving-img.jpg"}
 					alt={"A group of people in a picture"}
 					width={1000}
 					height={1000}
-					className="aspect-auto size-full object-cover"
+					className="aspect-auto size-full object-cover order-2 md:order-1"
 				/>
-				<div className="py-8 md:py-16 lg:py-24 container">
-					<div className="container">
+				<div className="py-10 md:py-16 lg:py-24 container order-1 md:order-2">
+					<div className="md:container">
 						<h2 className="text-primary font-semibold text-3xl md:text-4xl lg:text-5xl">
 							We are a part of the{" "}
 							<br className="hidden md:block" />{" "}
@@ -23,7 +23,7 @@ export const About = () => {
 								community we serve
 							</span>
 						</h2>
-						<p className="text-base my-6 text-primary leading-relaxed">
+						<p className="text-base mt-2 md:mt-4 mb-6 leading-relaxed">
 							Imole means light — and that’s exactly what we
 							bring. <br /> At Imole Network Foundation, we are a
 							Nigerian nonprofit passionate about transforming

@@ -27,6 +27,7 @@ export const GalleryMarquee = () => {
 					<div className="marquee-content will-change-transform flex items-center justify-between gap-4 group">
 						{galleryImages.map(({ src }, index: any) => (
 							<Image
+								key={index}
 								src={src}
 								alt={"Gallery image"}
 								width={1000}

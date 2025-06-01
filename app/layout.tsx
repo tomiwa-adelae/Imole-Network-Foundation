@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
+import { Toaster } from "@/components/ui/sonner";
 import { Footer } from "@/components/shared/Footer";
 
 const dmsans = DM_Sans({
@@ -22,6 +23,7 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={`${dmsans.className} antialiased`}>
 				{children}
+				<Toaster />
 				<Footer />
 			</body>
 		</html>

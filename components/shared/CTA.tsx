@@ -31,7 +31,7 @@ export const CTA = () => {
 							}}
 						>
 							<div className="grid container h-full text-white">
-								<div className="z-20 container">
+								<div className="z-20 md:container">
 									<div className="flex items-start justify-start gap-4">
 										<Icon className="size-16" />
 										<h2 className="font-semibold text-3xl lg:text-4xl">

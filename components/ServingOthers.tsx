@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/button";
 export const ServingOthers = () => {
 	return (
 		<div className="bg-[#F3EDDA] relative">
-			<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-				<div className="pt-24 pb-8 lg:py-24 container">
-					<div className="container">
+			<div className="grid grid-cols-1 md:grid-cols-2">
+				<div className="py-10 lg:py-24 container">
+					<div className="md:container">
 						<h2 className="text-primary font-semibold text-3xl md:text-4xl lg:text-5xl">
 							In the business of{" "}
 							<br className="hidden md:block" />
@@ -15,7 +15,7 @@ export const ServingOthers = () => {
 								serving people
 							</span>
 						</h2>
-						<p className="text-base my-6 text-primary">
+						<p className="text-base my-6">
 							At Imole Network Foundation, our purpose is rooted
 							in compassion and community. We believe true impact
 							comes from selfless service and genuine connection.

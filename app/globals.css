@@ -300,3 +300,7 @@ html {
 .marquee-section:hover .marquee-content {
 	animation-play-state: paused;
 }
+
+.PhoneInput input {
+	outline: none;
+}

@@ -281,3 +281,66 @@ export const ourProjects = [
 		src: "/assets/images/children-smiling.jpg",
 	},
 ];
+
+export const ourGoals = [
+	{
+		title: "Quality Education",
+		content:
+			"Every child deserves the chance to learn, grow, and dream. We work to break the barriers that keep children out of school — poverty, lack of supplies, or poor infrastructure. Our education initiatives include school supply drives, scholarship support, and mentorship programs to help children stay in school and succeed.",
+	},
+	{
+		title: "Affordable Healthcare",
+		content:
+			"Many communities in Nigeria still lack access to basic health services. Our goal is to bridge that gap by organizing free medical outreaches, providing medications, health checkups, and hosting awareness programs that focus on maternal health, hygiene, and disease prevention.",
+	},
+	{
+		title: "Combat Hunger",
+		content:
+			"Hunger doesn’t just rob the body — it steals potential. We run feeding programs, distribute food relief packs, and support low-income families to ensure that children and adults alike have the nutrition they need to live healthy and productive lives.",
+	},
+	{
+		title: "Community Service",
+		content:
+			"We believe lasting change starts at the grassroots. That’s why we recruit and train volunteers who are passionate about serving. Through community-based projects, clean-up campaigns, youth mentoring, and local empowerment programs, we build hope from the ground up.",
+	},
+	{
+		title: "Social Equity",
+		content:
+			"Our vision goes beyond short-term aid. We’re committed to creating systems that last — from supporting small businesses and women-led initiatives to providing clean water and sanitation education. Every goal is rooted in sustainability and fairness.",
+	},
+];
+
+export const subjects = [
+	{
+		type: "volunteer",
+		label: "I want to Volunteer",
+	},
+	{
+		type: "donation",
+		label: "I want to a donation",
+	},
+	{
+		type: "partnership",
+		label: "Partnership or Collaboration",
+	},
+	{
+		type: "general",
+		label: "General Inquiry",
+	},
+	{
+		type: "event",
+		label: "Request to attend or host an Event",
+	},
+	{
+		type: "support",
+		label: "I need Help or Support",
+	},
+	{
+		type: "feedback",
+		label: "Feedback or Suggestions",
+	},
+	{
+		type: "media",
+		label: "Media or Press Inquiry",
+	},
+];

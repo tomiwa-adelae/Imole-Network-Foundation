@@ -14,7 +14,7 @@ const irish = Irish_Grover({
 export const SupportUs = () => {
 	return (
 		<div
-			className="bg-blend-overlay bg-scroll bg-no-repeat bg-cover bg-center py-16 flex items-center justify-center relative"
+			className="bg-blend-overlay bg-scroll bg-no-repeat bg-cover bg-center py-24 flex items-center justify-center relative"
 			style={{
 				backgroundImage: `url(/assets/images/support-img.jpg)`,
 			}}
