@@ -7,7 +7,13 @@ import { footerDetails, socialLinks } from "@/constants";
 export const Footer = () => {
 	const year = new Date().getFullYear();
 	return (
-		<footer className="bg-primary py-8 md:py-12 lg:py-16 text-white">
+		<footer
+			className="bg-scroll bg-no-repeat bg-cover bg-left flex items-center justify-center relative py-8 md:py-12 lg:py-16 text-white"
+			style={{
+				backgroundImage: `url(/assets/images/help-bg.png)`,
+			}}
+			// className="bg-primary py-8 md:py-12 lg:py-16 text-white"
+		>
 			<div className="container">
 				<div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
 					<div className="col-span-2 md:col-span-1 lg:col-span-2">

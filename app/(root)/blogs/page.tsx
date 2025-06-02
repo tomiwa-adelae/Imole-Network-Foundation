@@ -1,7 +1,8 @@
 import { Blogs } from "@/components/Blogs";
 import { Header } from "@/components/shared/Header";
+import { DonateCTA } from "@/components/DonateCTA";
+import { Testimonials } from "@/components/shared/Testimonials";
 import { ImageShowcase } from "@/components/shared/ImageShowcase";
-import React from "react";
 
 const page = () => {
 	return (
@@ -12,6 +13,8 @@ const page = () => {
 				image={"/assets/images/children-smiling.jpg"}
 			/>
 			<Blogs />
+			<DonateCTA />
+			<Testimonials />
 		</div>
 	);
 };

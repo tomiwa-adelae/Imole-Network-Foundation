@@ -6,6 +6,7 @@ import {
 	HeartHandshake,
 	Heart,
 	ChevronRight,
+	HandHelping,
 } from "lucide-react";
 
 export const navLinks = [
@@ -28,6 +29,33 @@ export const navLinks = [
 	{
 		slug: "/contact",
 		label: "Contact us",
+	},
+];
+
+export const mobileNavLinks = [
+	{
+		slug: "/",
+		label: "Home",
+	},
+	{
+		slug: "/about",
+		label: "About us",
+	},
+	{
+		slug: "/projects",
+		label: "Our projects",
+	},
+	{
+		slug: "/blogs",
+		label: "Our Blogs",
+	},
+	{
+		slug: "/contact",
+		label: "Contact us",
+	},
+	{
+		slug: "/gallery",
+		label: "Our gallery",
 	},
 ];
 
@@ -56,8 +84,20 @@ export const footerDetails = [
 				label: "Latest blogs",
 			},
 			{
-				slug: "/donations",
-				label: "Donations",
+				slug: "/projects",
+				label: "Our projects",
+			},
+			{
+				slug: "/gallery",
+				label: "Our gallery",
+			},
+			{
+				slug: "/donate",
+				label: "Donate now",
+			},
+			{
+				slug: "/volunteer",
+				label: "Become a volunteer",
 			},
 		],
 	},
@@ -150,7 +190,7 @@ export const CTAs = [
 			"Use your time, skills, and heart to impact lives and uplift communities. Together, we can serve, grow, and shine the light of hope across Nigeria.",
 		slug: "/volunteer",
 		label: "Become a Volunteer",
-		buttonIcon: Heart,
+		buttonIcon: HandHelping,
 		overlay: "bg-secondary/30",
 		hover: "hover:bg-primary",
 	},
@@ -261,27 +301,6 @@ export const hereToHelp = [
 	},
 ];
 
-export const ourProjects = [
-	{
-		title: "Back-to-School Drive",
-		description:
-			"Equipping children with school kits and materials so they can learn with confidence and dignity.",
-		src: "/assets/images/children-smiling.jpg",
-	},
-	{
-		title: "Medical Outreach Program",
-		description:
-			"Bringing free medical care and health education to rural communities across Nigeria.",
-		src: "/assets/images/children-smiling.jpg",
-	},
-	{
-		title: "Feed a Family Campaign",
-		description:
-			"Providing food packages and support to vulnerable families facing hunger and malnutrition",
-		src: "/assets/images/children-smiling.jpg",
-	},
-];
-
 export const ourGoals = [
 	{
 		title: "Quality Education",
@@ -344,3 +363,152 @@ export const subjects = [
 		label: "Media or Press Inquiry",
 	},
 ];
+
+export const ourProjects = [
+	{
+		id: "1",
+		title: "Back-to-School Drive",
+		description:
+			"Equipping children with school kits and materials so they can learn with confidence and dignity.",
+		src: "/assets/images/children-smiling.jpg",
+		category: "Domestic & Transportation",
+	},
+	{
+		id: "2",
+		title: "Medical Outreach Program",
+		description:
+			"Bringing free medical care and health education to rural communities across Nigeria.",
+		src: "/assets/images/children-smiling.jpg",
+		category: "Education",
+	},
+	{
+		id: "3",
+		title: "Feed a Family Campaign",
+		description:
+			"Providing food packages and support to vulnerable families facing hunger and malnutrition",
+		src: "/assets/images/children-smiling.jpg",
+		category: "Community Development",
+	},
+	{
+		id: "4",
+		title: "Health Support Initiative",
+		description:
+			"Providing food packages and support to vulnerable families facing hunger and malnutrition",
+		src: "/assets/images/children-smiling.jpg",
+		category: "Healthcare",
+	},
+	{
+		id: "5",
+		title: "Feed a Family Campaign",
+		description:
+			"Providing food packages and support to vulnerable families facing hunger and malnutrition",
+		src: "/assets/images/children-smiling.jpg",
+		category: "Community Development",
+	},
+	{
+		id: "6",
+		title: "Health Support Initiative",
+		description:
+			"Providing food packages and support to vulnerable families facing hunger and malnutrition",
+		src: "/assets/images/children-smiling.jpg",
+		category: "Healthcare",
+	},
+];
+
+export const testimonials = [
+	{
+		image: "/assets/images/user-one.jpeg",
+		name: "Tomiwa Adelae",
+		testimony:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eius molestiae illo id, ab dolor modi, est aut atque iure facilis reiciendis ex exercitationem, perspiciatis fugiat consequuntur ? Dolor, itaque.",
+		borderColor: "border-white",
+		bgColor: "bg-secondary/20",
+		textColor: "text-secondary",
+		rotate: "lg:-rotate-6",
+	},
+	{
+		image: "/assets/images/user-two.webp",
+		name: "Sandra Reddington",
+		testimony:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eius molestiae illo id, ab dolor modi, est aut atque iure facilis reiciendis ex exercitationem, perspiciatis fugiat consequuntur ? Dolor, itaque.",
+		borderColor: "border-gray-200",
+		bgColor: "bg-[#FFFBFD]",
+		textColor: "text-primary",
+		rotate: "rotate-0",
+	},
+	{
+		image: "/assets/images/user-three.jpg",
+		name: "Israel Ibitoye",
+		testimony:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eius molestiae illo id, ab dolor modi, est aut atque iure facilis reiciendis ex exercitationem, perspiciatis fugiat consequuntur ? Dolor, itaque.",
+		borderColor: "border-orange-400",
+		bgColor: "bg-[#FEF8E8]",
+		textColor: "text-orange-400",
+		rotate: "lg:rotate-6",
+	},
+];
+
+export const volunteeringWays = [
+	{
+		image: "/assets/icons/education.svg",
+		name: " Community Education",
+		description:
+			"We believe every child deserves a chance to learn and dream big. Through tutoring, mentorship, and learning support, we help build brighter futures one lesson at a time.",
+		borderColor: "border-white",
+		bgColor: "bg-secondary/20",
+		textColor: "text-secondary",
+		rotate: "lg:-rotate-6",
+	},
+	{
+		image: "/assets/icons/health.svg",
+		name: "Health Support",
+		description:
+			"Access to good health is a basic right. Our health initiatives bring medical care, awareness, and wellness outreach to communities that need it most.",
+		borderColor: "border-gray-200",
+		bgColor: "bg-[#FFFBFD]",
+		textColor: "text-primary",
+		rotate: "rotate-0",
+	},
+	{
+		image: "/assets/icons/food.svg",
+		name: "Food Relief",
+		description:
+			"Hunger shouldn’t stand in the way of hope. We provide nutritious meals and food supplies to vulnerable children and families across communities.",
+		borderColor: "border-orange-400",
+		bgColor: "bg-[#FEF8E8]",
+		textColor: "text-orange-400",
+		rotate: "lg:rotate-6",
+	},
+];
+
+export const accountDetails = [
+	{
+		icon: "/assets/icons/uba.png",
+		bankName: "United Bank of Africa",
+		accountNumber: "2143463056",
+		accountName: "Imole Network Foundations",
+		bgColor: "bg-[#DA0D00]/20",
+		textColor: "text-[#DA0D00]",
+		rotate: "lg:-rotate-6",
+	},
+	{
+		icon: "/assets/icons/first-bank.png",
+		bankName: "First Bank of Nigeria",
+		accountNumber: "2143463056",
+		accountName: "Imole Network Foundations",
+		bgColor: "bg-[#FFFBFD]/20",
+		textColor: "text-[#02446A]",
+		rotate: "rotate-0",
+	},
+	{
+		icon: "/assets/icons/gtb.jpeg",
+		bankName: "Guaranty Trust Bank",
+		accountNumber: "2143463056",
+		accountName: "Imole Network Foundations",
+		bgColor: "bg-[#D84007]/20",
+		textColor: "text-[#D84007]",
+		rotate: "lg:rotate-6",
+	},
+];
+
+export const areaOfInterest = ["education", "health", "food", "media", "event"];

@@ -18,7 +18,7 @@ export const BlogDetails = () => {
 						height={1000}
 						className="aspect-auto object-cover rounded-md"
 					/>
-					<h2 className="font-semibold text-xl mt-4 lg:text-2xl">
+					<h2 className="font-semibold text-2xl mt-4 lg:text-3xl">
 						Help for Kids Education Donate Money
 					</h2>
 					<div className="flex items-center justify-start gap-4">
@@ -79,7 +79,7 @@ export const BlogDetails = () => {
 						<p className="text-sm text-muted-foreground font-medium">
 							Share:
 						</p>
-						<div className="flex items-center text-primary justify-start gap-6">
+						<div className="flex items-center text-primary justify-start gap-2">
 							{socialLinks.map(({ icon, name, slug }, index) => {
 								const Icon = icon;
 								return (

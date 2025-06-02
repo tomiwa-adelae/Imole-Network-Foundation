@@ -16,7 +16,7 @@ export const Header = () => {
 						<Link
 							key={idx}
 							href={link.slug}
-							className="text-base font-normal hover:text-secondary transition-all"
+							className="text-sm font-medium hover:text-secondary transition-all"
 						>
 							{link.label}
 						</Link>
@@ -25,7 +25,7 @@ export const Header = () => {
 				<div className="flex items-center justify-end gap-4">
 					<div className="hidden md:block">
 						<Button variant="secondary" asChild size="md">
-							<Link href="/book">
+							<Link href="/donate">
 								Give <Heart />
 							</Link>
 						</Button>

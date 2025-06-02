@@ -4,7 +4,7 @@ import { hereToHelp } from "@/constants";
 export const HereToHelp = () => {
 	return (
 		<div
-			className="text-white bg-scroll bg-no-repeat bg-cover bg-center py-16 flex items-center justify-center relative"
+			className="text-white bg-scroll bg-no-repeat bg-cover bg-left py-16 flex items-center justify-center relative"
 			style={{
 				backgroundImage: `url(/assets/images/help-bg.png)`,
 			}}
@@ -14,7 +14,10 @@ export const HereToHelp = () => {
 					We're here to <span className="text-secondary">Help</span>
 				</h2>
 				{hereToHelp.map(({ image, title, description }, index) => (
-					<div className="bg-white p-8 rounded-lg flex flex-col items-center justify-center text-center group">
+					<div
+						key={index}
+						className="bg-white p-8 rounded-lg flex flex-col items-center justify-center text-center group"
+					>
 						<Image
 							src={image}
 							alt={`${title}'s picture`}

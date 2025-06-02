@@ -15,7 +15,12 @@ export const GalleryMarquee = () => {
 	};
 
 	return (
-		<div className="bg-[#F3EDDA] relative py-16">
+		<div
+			className="bg-scroll bg-[#F3EDDA] bg-no-repeat bg-contain bg-top-right py-16 relative"
+			style={{
+				backgroundImage: `url(/assets/images/line-bg.png)`,
+			}}
+		>
 			<div className="container">
 				<h2 className="font-semibold text-center text-3xl md:text-4xl lg:text-5xl">
 					Our <span className="text-secondary">Gallery</span>

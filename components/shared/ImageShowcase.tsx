@@ -1,6 +1,6 @@
 interface Props {
 	image: string;
-	title: string;
+	title?: string;
 }
 
 export const ImageShowcase = ({ image, title }: Props) => {
@@ -13,12 +13,18 @@ export const ImageShowcase = ({ image, title }: Props) => {
 		>
 			<div className="grid container h-full text-white">
 				<div className="z-20 container">
-					<h1 className="text-5xl lg:text-7xl font-bold text-center">
-						{title}
-					</h1>
+					{title && (
+						<h1 className="text-5xl lg:text-7xl font-bold text-center">
+							{title}
+						</h1>
+					)}
 				</div>
 			</div>
-			<div className={`absolute inset-0 bg-black/70`} />
+			<div
+				className={`absolute inset-0 ${
+					title ? "bg-black/70" : "bg-black/20"
+				}`}
+			/>
 		</div>
 	);
 };

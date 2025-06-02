@@ -1,7 +1,7 @@
-import { BlogDetails } from "@/components/BlogDetails";
+import { Projects } from "@/components/Projects";
 import { DonateCTA } from "@/components/DonateCTA";
-import { OurVolunteers } from "@/components/OurVolunteers";
 import { Header } from "@/components/shared/Header";
+import { Testimonials } from "@/components/shared/Testimonials";
 import { ImageShowcase } from "@/components/shared/ImageShowcase";
 
 const page = () => {
@@ -9,12 +9,12 @@ const page = () => {
 		<div className="relative">
 			<Header />
 			<ImageShowcase
-				title="Imole Hosts Health Outreach"
+				title="Our projects"
 				image={"/assets/images/children-smiling.jpg"}
 			/>
-			<BlogDetails />
+			<Projects />
 			<DonateCTA />
-			<OurVolunteers />
+			<Testimonials />
 		</div>
 	);
 };

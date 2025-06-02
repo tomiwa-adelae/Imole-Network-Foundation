@@ -7,6 +7,8 @@ import { SupportUs } from "@/components/shared/SupportUs";
 import { OurVolunteers } from "@/components/OurVolunteers";
 import { ImageShowcase } from "@/components/shared/ImageShowcase";
 import { HereToHelp } from "@/components/HereToHelp";
+import { DonateCTA } from "@/components/DonateCTA";
+import { Testimonials } from "@/components/shared/Testimonials";
 
 const page = () => {
 	return (
@@ -22,7 +24,9 @@ const page = () => {
 			<OurVision />
 			<HereToHelp />
 			<OurVolunteers />
-			<SupportUs />
+			<DonateCTA />
+			<Testimonials />
+			{/* <SupportUs /> */}
 		</div>
 	);
 };

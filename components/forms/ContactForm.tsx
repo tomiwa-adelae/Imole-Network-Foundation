@@ -27,6 +27,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { subjects } from "@/constants";
 import { useState } from "react";
+import { RequiredAsterisk } from "../shared/RequiredAsterisk";
 
 const FormSchema = z.object({
 	name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -70,7 +71,12 @@ export function ContactForm() {
 	}
 
 	return (
-		<div className="py-16 bg-[#F3EDDA]">
+		<div
+			className="bg-scroll bg-[#F3EDDA] bg-no-repeat bg-contain bg-top-right py-16 flex items-center justify-center relative"
+			style={{
+				backgroundImage: `url(/assets/images/line-bg.png)`,
+			}}
+		>
 			<div className="container">
 				<h2 className="text-center font-semibold text-3xl md:text-4xl lg:text-5xl">
 					Have a Question?
@@ -87,7 +93,9 @@ export function ContactForm() {
 									name="name"
 									render={({ field }) => (
 										<FormItem>
-											<FormLabel>Name</FormLabel>
+											<FormLabel>
+												Name <RequiredAsterisk />
+											</FormLabel>
 											<FormControl>
 												<Input
 													placeholder="Your name"
@@ -103,7 +111,9 @@ export function ContactForm() {
 									name="email"
 									render={({ field }) => (
 										<FormItem>
-											<FormLabel>Email</FormLabel>
+											<FormLabel>
+												Email <RequiredAsterisk />
+											</FormLabel>
 											<FormControl>
 												<Input
 													type={"email"}
@@ -121,7 +131,9 @@ export function ContactForm() {
 								name="phone"
 								render={({ field }) => (
 									<FormItem>
-										<FormLabel>Phone Number</FormLabel>
+										<FormLabel>
+											Phone Number <RequiredAsterisk />
+										</FormLabel>
 										<FormControl>
 											<PhoneInput
 												placeholder="Enter phone number"
@@ -143,7 +155,9 @@ export function ContactForm() {
 								name="subject"
 								render={({ field }) => (
 									<FormItem>
-										<FormLabel>Subject</FormLabel>
+										<FormLabel>
+											Subject <RequiredAsterisk />
+										</FormLabel>
 										<Select
 											onValueChange={field.onChange}
 											defaultValue={field.value}
@@ -175,7 +189,9 @@ export function ContactForm() {
 								name="message"
 								render={({ field }) => (
 									<FormItem>
-										<FormLabel>Message</FormLabel>
+										<FormLabel>
+											Message <RequiredAsterisk />
+										</FormLabel>
 										<FormControl>
 											<Textarea
 												placeholder="We are happy to hear your inquiries..."

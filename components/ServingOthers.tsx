@@ -26,7 +26,7 @@ export const ServingOthers = () => {
 							are.
 						</p>
 						<Button variant="secondary" asChild size="lg">
-							<Link href="/donate">Become a Volunteer</Link>
+							<Link href="/volunteer">Become a Volunteer</Link>
 						</Button>
 					</div>
 				</div>

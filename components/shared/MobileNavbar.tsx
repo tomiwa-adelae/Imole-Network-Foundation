@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { navLinks } from "@/constants";
+import { mobileNavLinks } from "@/constants";
 import { MenuIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/shared/Logo";
@@ -27,15 +27,18 @@ export function MobileNavbar() {
 		}
 	};
 
+	const isActive = (slug: string) =>
+		pathname === slug || pathname.startsWith(`${slug}/`);
+
 	return (
 		<Sheet open={openMobile} onOpenChange={setOpenMobile}>
 			<SheetTrigger asChild>
 				<Button
 					variant="ghost"
-					className="hover:bg-transparent"
+					className="hover:bg-transparent hover:text-muted-foreground"
 					size={"icon"}
 				>
-					<MenuIcon className="size-6 hover:text-secondary" />
+					<MenuIcon className="size-6" />
 				</Button>
 			</SheetTrigger>
 			<SheetContent className="h-screen py-4" side={"left"}>
@@ -44,27 +47,22 @@ export function MobileNavbar() {
 						<SheetClose asChild>
 							<Logo />
 						</SheetClose>
-						<div className="mt-8 flex flex-col gap-4">
-							{navLinks.map((link, idx) => {
-								const isActive =
-									pathname === link.slug ||
-									pathname.startsWith(`${link.slug}/`);
+						<div className="mt-6 flex flex-col gap-1">
+							{mobileNavLinks.map((link, idx) => {
 								return (
 									<Link
 										key={idx}
 										href={link.slug}
-										className={`group flex items-center justify-start gap-2 group/sidebar py-2
+										className={`group flex items-center justify-start gap-2 group/sidebar
                             ${
-								isActive
-									? "text-primary"
-									: "text-black dark:text-white text-sm"
-							} hover:text-primary
+								isActive(link.slug) && "bg-[#F2F2F2]"
+							} hover:bg-[#F2F2F2] p-4 rounded-lg
                             `}
 										onClick={handleClick}
 									>
-										<span className="text-sm group-hover/sidebar:translate-x-1 transition duration-150 whitespace-pre inline-block !p-0 !m-0 font-medium">
+										<h5 className="text-sm font-medium">
 											{link.label}
-										</span>
+										</h5>
 									</Link>
 								);
 							})}
@@ -75,7 +73,17 @@ export function MobileNavbar() {
 								size="md"
 								className="text-sm w-full"
 							>
-								<Link href="/book">Donate now</Link>
+								<Link href="/donate">Donate now</Link>
+							</Button>
+							<Button
+								asChild
+								size="md"
+								className="text-sm w-full"
+								variant={"ghost"}
+							>
+								<Link href="/volunteer">
+									Become a volunteer
+								</Link>
 							</Button>
 						</div>
 					</div>
