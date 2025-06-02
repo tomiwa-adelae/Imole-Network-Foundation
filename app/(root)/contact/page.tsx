@@ -14,7 +14,10 @@ const page = () => {
 	return (
 		<div className="relative">
 			<Header />
-			<ImageShowcase image={"/assets/images/children-smiling.jpg"} />
+			<ImageShowcase
+				title="Contact us"
+				image={"/assets/images/children-smiling.jpg"}
+			/>
 			<ContactForm />
 			<FindOnMap />
 		</div>

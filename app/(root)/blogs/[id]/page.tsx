@@ -8,7 +8,7 @@ const page = () => {
 		<div className="relative">
 			<Header />
 			<ImageShowcase
-				title="Imole Hosts Health Outreach in Kwara State"
+				title="Imole Hosts Health Outreach"
 				image={"/assets/images/children-smiling.jpg"}
 			/>
 			<BlogDetails />
