@@ -6,7 +6,7 @@ import { ImageShowcase } from "@/components/shared/ImageShowcase";
 import { latestNews } from "@/constants";
 import { redirect } from "next/navigation";
 
-const page = async ({ params }: { params: { id: string } }) => {
+const page = async ({ params }: { params: any }) => {
 	const { id } = params;
 
 	// Find the blog detail by ID

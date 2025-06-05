@@ -7,7 +7,7 @@ import { OurVolunteers } from "@/components/OurVolunteers";
 import { ourProjects } from "@/constants";
 import { redirect } from "next/navigation";
 
-const page = async ({ params }: { params: { id: string } }) => {
+const page = async ({ params }: { params: any }) => {
 	const { id } = params;
 
 	// Find the blog detail by ID
