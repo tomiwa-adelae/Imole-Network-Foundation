@@ -6,7 +6,7 @@ interface Props {
 export const ImageShowcase = ({ image, title }: Props) => {
 	return (
 		<div
-			className="bg-scroll bg-no-repeat bg-cover bg-center min-h-[70vh] py-24 flex items-center justify-center relative"
+			className="bg-scroll bg-no-repeat bg-cover bg-center min-h-[50vh] lg:min-h-[70vh] py-24 flex items-center justify-center relative"
 			style={{
 				backgroundImage: `url(${image})`,
 			}}
@@ -14,7 +14,7 @@ export const ImageShowcase = ({ image, title }: Props) => {
 			<div className="grid container h-full text-white">
 				<div className="z-20 container">
 					{title && (
-						<h1 className="text-5xl lg:text-7xl font-bold text-center">
+						<h1 className="line-clamp-2 text-5xl lg:text-7xl font-bold text-center">
 							{title}
 						</h1>
 					)}

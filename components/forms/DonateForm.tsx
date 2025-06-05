@@ -111,15 +111,15 @@ export function DonateForm() {
 		<div className="bg-[#F3EDDA] relative">
 			<div className="grid grid-cols-1 md:grid-cols-2">
 				<Image
-					src={"/assets/images/serving-img.jpg"}
+					src={"/assets/images/gallery8.jpg"}
 					alt={"A group of people in a picture"}
 					width={1000}
 					height={1000}
 					className="aspect-auto size-full object-cover order-2 md:order-1"
 				/>
-				<div className="py-10 md:py-16 lg:py-24 container order-1 md:order-2">
+				<div className="py-16 lg:py-24 container order-1 md:order-2">
 					<div className="md:container">
-						<h2 className="text-primary font-semibold text-3xl md:text-4xl lg:text-5xl mb-8">
+						<h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl mb-8">
 							Donate online
 						</h2>
 						<Form {...form}>

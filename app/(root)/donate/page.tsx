@@ -1,8 +1,16 @@
+import type { Metadata } from "next";
 import { DonationDetails } from "@/components/DonationDetails";
 import { DonateForm } from "@/components/forms/DonateForm";
 import { OurVolunteers } from "@/components/OurVolunteers";
 import { Showcase } from "@/components/shared/Showcase";
-import React from "react";
+
+export const metadata: Metadata = {
+	title: "Donate | Support Imole Network Foundation’s Mission to Help Others",
+	description:
+		"Support our work with your donation. Whether through bank transfer or online giving, your gift helps provide education, health care, and meals to those in need.",
+	keywords:
+		"Donate Nigeria, give to Imole Foundation, NGO donations, help Nigerian children, support charity Nigeria",
+};
 
 const page = () => {
 	return (

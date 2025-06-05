@@ -8,14 +8,14 @@ export const ServingOthers = () => {
 			<div className="grid grid-cols-1 md:grid-cols-2">
 				<div className="py-10 lg:py-24 container">
 					<div className="md:container">
-						<h2 className="text-primary font-semibold text-3xl md:text-4xl lg:text-5xl">
+						<h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl">
 							In the business of{" "}
 							<br className="hidden md:block" />
 							<span className="md:block text-secondary italic -rotate-1">
 								serving people
 							</span>
 						</h2>
-						<p className="text-base my-6">
+						<p className="text-base my-6 leading-relaxed">
 							At Imole Network Foundation, our purpose is rooted
 							in compassion and community. We believe true impact
 							comes from selfless service and genuine connection.
@@ -31,7 +31,7 @@ export const ServingOthers = () => {
 					</div>
 				</div>
 				<Image
-					src={"/assets/images/serving-img.jpg"}
+					src={"/assets/images/gallery6.jpg"}
 					alt={"A group of people in a picture"}
 					width={1000}
 					height={1000}

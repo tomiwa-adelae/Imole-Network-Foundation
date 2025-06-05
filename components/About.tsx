@@ -13,25 +13,25 @@ export const About = () => {
 					height={1000}
 					className="aspect-auto size-full object-cover order-2 md:order-1"
 				/>
-				<div className="py-10 md:py-16 lg:py-24 container order-1 md:order-2">
+				<div className="py-16 lg:py-24 container order-1 md:order-2">
 					<div className="md:container">
-						<h2 className="text-primary font-semibold text-3xl md:text-4xl lg:text-5xl">
+						<h2 className="text-black font-semibold text-3xl md:text-4xl lg:text-5xl">
 							We are a part of the{" "}
-							<br className="hidden md:block" />{" "}
+							<br className="hidden lg:block" />{" "}
 							<span className="md:block text-secondary italic -rotate-1">
 								{" "}
 								community we serve
 							</span>
 						</h2>
 						<p className="text-base mt-2 md:mt-4 mb-6 leading-relaxed">
-							Imole means light — and that’s exactly what we
-							bring. <br /> At Imole Network Foundation, we are a
+							Imole means light and that’s exactly what we bring.{" "}
+							<br /> At Imole Network Foundation, we are a
 							Nigerian nonprofit passionate about transforming
 							lives through compassion, education, healthcare, and
 							community empowerment. <br /> We believe that every
 							life matters and that real change begins when we
-							serve those most in need. From underserved rural
-							areas to urban communities, we stand in the gap —
+							serve those most in need. From undeserved rural
+							areas to urban communities, we stand in the gap,
 							spreading hope, love, and light. Join us in building
 							a better Nigeria, one life at a time.
 						</p>

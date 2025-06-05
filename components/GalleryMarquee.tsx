@@ -23,13 +23,13 @@ export const GalleryMarquee = () => {
 		>
 			<div className="container">
 				<h2 className="font-semibold text-center text-3xl md:text-4xl lg:text-5xl">
-					Our <span className="text-secondary">Gallery</span>
+					Our Gallery
 				</h2>
 			</div>
 
 			<div className="marquee-section relative overflow-hidden mt-8">
 				<div className="whitespace-nowrap overflow-hidden">
-					<div className="marquee-content will-change-transform flex items-center justify-between gap-4 group">
+					<div className="marquee-content will-change-transform flex items-center justify-between gap-4 group overflow-hidden">
 						{galleryImages.map(({ src }, index: any) => (
 							<Image
 								key={index}
@@ -37,7 +37,7 @@ export const GalleryMarquee = () => {
 								alt={"Gallery image"}
 								width={1000}
 								height={1000}
-								className="cursor-pointer rounded-lg size-[350px] object-cover transition-all"
+								className="cursor-pointer rounded-lg size-[350px] object-cover transition-all hover:scale-[102%]"
 								onClick={() => handleOpen(index)}
 							/>
 						))}

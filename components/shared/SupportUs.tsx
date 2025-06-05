@@ -1,19 +1,29 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
+import CountUp from "react-countup";
 import { Heart } from "lucide-react";
 import { supportUs } from "@/constants";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-
-import { Irish_Grover } from "next/font/google";
-
-const irish = Irish_Grover({
-	subsets: ["latin"],
-	weight: ["400"],
-});
+import { useInView } from "react-intersection-observer";
 
 export const SupportUs = () => {
+	const { ref, inView } = useInView({
+		triggerOnce: true,
+		threshold: 0.3,
+	});
+	const [startCount, setStartCount] = useState(false);
+
+	useEffect(() => {
+		if (inView) {
+			setStartCount(true);
+		}
+	}, [inView]);
+
 	return (
 		<div
+			ref={ref}
 			className="bg-blend-overlay bg-scroll bg-no-repeat bg-cover bg-center py-24 flex items-center justify-center relative"
 			style={{
 				backgroundImage: `url(/assets/images/support-img.jpg)`,
@@ -24,12 +34,9 @@ export const SupportUs = () => {
 					<div className="z-20 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-4">
 						<div>
 							<h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl">
-								Support Imole{" "}
-								<span className="text-secondary">
-									Foundations
-								</span>
+								Support Imole Foundations
 							</h2>
-							<p className="text-base mt-4 mb-6">
+							<p className="text-base mt-1 mb-6 leading-relaxed">
 								Your generosity fuels our mission. With your
 								support, we can provide access to education,
 								healthcare, and empowerment to undeserved
@@ -52,15 +59,22 @@ export const SupportUs = () => {
 											<Image
 												src={image}
 												alt={"Green background circle"}
-												width={1000}
-												height={1000}
-												className="size-[200px] object-cover"
+												width={200}
+												height={200}
+												className="object-cover"
 											/>
 											<h3
-												className={`absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] italic text-4xl ${irish.className}`}
+												className={`absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] text-4xl lg:text-5xl font-bold`}
 											>
-												{number}
-												{suffix}
+												{startCount && (
+													<CountUp
+														start={-30}
+														end={Number(number)}
+														duration={2.25}
+														decimal=","
+														suffix={suffix}
+													/>
+												)}
 											</h3>
 										</div>
 										<h3 className="text-base text-center lg:text-xl font-normal">
@@ -73,7 +87,7 @@ export const SupportUs = () => {
 					</div>
 				</div>
 			</div>
-			<div className="absolute inset-0 bg-black/40" />
+			<div className="absolute inset-0 bg-black/65" />
 		</div>
 	);
 };

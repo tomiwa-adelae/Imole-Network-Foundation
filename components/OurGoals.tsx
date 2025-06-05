@@ -12,7 +12,7 @@ import { Heart } from "lucide-react";
 export const OurGoals = () => {
 	return (
 		<div
-			className="bg-scroll bg-secondary bg-no-repeat bg-contain bg-top-right py-16 flex items-center justify-center relative"
+			className="bg-scroll bg-[#660066] bg-no-repeat bg-contain bg-top-right py-16 flex items-center justify-center relative"
 			style={{
 				backgroundImage: `url(/assets/images/line-bg.png)`,
 			}}
@@ -23,10 +23,10 @@ export const OurGoals = () => {
 						<h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl">
 							Our Goals
 						</h2>
-						<p className="mt-2 mb-6 text-sm leading-relaxed lg:text-base">
+						<p className="mt-2 mb-6 leading-relaxed text-base">
 							At Imole Network Foundation, our goals are rooted in
 							compassion and driven by impact. We believe real
-							change starts with clear intentions — that's why
+							change starts with clear intentions and that's why
 							we’ve outlined specific, actionable goals to guide
 							our work.
 						</p>

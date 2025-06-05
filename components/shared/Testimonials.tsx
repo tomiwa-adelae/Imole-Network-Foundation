@@ -8,7 +8,7 @@ export const Testimonials = () => {
 	return (
 		<div className="bg-white py-16">
 			<div className="container">
-				<h2 className="text-primary font-semibold text-3xl md:text-4xl lg:text-5xl">
+				<h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl">
 					What people say about us{" "}
 				</h2>
 				<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8 mt-8">

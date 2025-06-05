@@ -3,16 +3,22 @@ import { DonateCTA } from "@/components/DonateCTA";
 import { OurVolunteers } from "@/components/OurVolunteers";
 import { Header } from "@/components/shared/Header";
 import { ImageShowcase } from "@/components/shared/ImageShowcase";
+import { latestNews } from "@/constants";
+import { redirect } from "next/navigation";
 
-const page = () => {
+const page = async ({ params }: { params: { id: string } }) => {
+	const { id } = params;
+
+	// Find the blog detail by ID
+	const details = latestNews.find((news) => news.id === id);
+
+	// Optional: Handle case where ID is not found
+	if (!details) redirect("/not-found.tsx");
 	return (
 		<div className="relative">
 			<Header />
-			<ImageShowcase
-				title="Imole Hosts Health Outreach"
-				image={"/assets/images/children-smiling.jpg"}
-			/>
-			<BlogDetails />
+			<ImageShowcase title={details.title} image={details.image} />
+			<BlogDetails details={details} />
 			<DonateCTA />
 			<OurVolunteers />
 		</div>

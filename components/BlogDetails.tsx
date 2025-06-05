@@ -6,20 +6,20 @@ import { Clock, Heart, User } from "lucide-react";
 import { Separator } from "./ui/separator";
 import { socialLinks } from "@/constants";
 
-export const BlogDetails = () => {
+export const BlogDetails = ({ details }: { details: any }) => {
 	return (
 		<div className="py-16 relative">
 			<div className="container grid grid-cols-1 lg:grid-cols-6 gap-4">
 				<div className="col-span-1 lg:col-span-4">
 					<Image
-						src={"/assets/images/children-smiling.jpg"}
-						alt="Shildin"
+						src={details.image}
+						alt={`${details.title}'s image`}
 						width={1000}
 						height={1000}
 						className="aspect-auto object-cover rounded-md"
 					/>
 					<h2 className="font-semibold text-2xl mt-4 lg:text-3xl">
-						Help for Kids Education Donate Money
+						{details.title}
 					</h2>
 					<div className="flex items-center justify-start gap-4">
 						<p className="mt-2 text-sm text-muted-foreground">
@@ -34,9 +34,7 @@ export const BlogDetails = () => {
 					<Separator className="my-4" />
 					<div className="space-y-4">
 						<p className="text-base leading-relaxed">
-							When to Use Lorem Ipsum generally, lorem ipsum is
-							best suited to keeping template fo looking bare or
-							minimizing the distractions of the draft copy.
+							{details.excerpt}
 							<br />
 							Second, use lorem ipsum if you think placeholder
 							text will distracting. in voluptate velit esse.
@@ -61,8 +59,8 @@ export const BlogDetails = () => {
 					</div>
 					<div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
 						<Image
-							src={"/assets/images/children-smiling.jpg"}
-							alt="Shildin"
+							src={details.image}
+							alt={`${details.title}'s image`}
 							width={1000}
 							height={1000}
 							className="aspect-auto object-cover rounded-md"
@@ -102,7 +100,7 @@ export const BlogDetails = () => {
 					<div
 						className="bg-scroll sticky top-10 bg-no-repeat overflow-hidden bg-cover bg-center min-h-40 rounded-md py-16 flex items-center justify-center "
 						style={{
-							backgroundImage: `url(/assets/images/children-smiling.jpg)`,
+							backgroundImage: `url(/assets/images/gallery6.jpg)`,
 						}}
 					>
 						<div className="grid container h-full text-white rounded-md">

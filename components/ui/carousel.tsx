@@ -141,7 +141,7 @@
 // }: CarouselControlProps) => {
 // 	return (
 // 		<button
-// 			className={`w-10 h-10 flex items-center mx-2 justify-center bg-neutral-200 dark:bg-neutral-800 border-3 border-transparent rounded-full focus:border-[#6D64F7] focus:outline-none hover:-translate-y-0.5 active:translate-y-0.5 transition duration-200 ${
+// 			className={`w-10 h-10 flex items-center mx-2 justify-center bg-neutral-200 dark:bg-neutral-800 border-3 border-transparent rounded-full focus:border-secondary focus:outline-none hover:-translate-y-0.5 active:translate-y-0.5 transition duration-200 ${
 // 				type === "previous" ? "rotate-180" : ""
 // 			}`}
 // 			title={title}
@@ -226,7 +226,7 @@ import { useState, useRef, useId, useEffect } from "react";
 interface SlideData {
 	title: string;
 	description: string;
-	src: string;
+	image: string;
 }
 
 interface SlideProps {
@@ -283,7 +283,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
 		event.currentTarget.style.opacity = "1";
 	};
 
-	const { src, title, description } = slide;
+	const { image, title, description } = slide;
 
 	return (
 		<div className="[perspective:1200px] [transform-style:preserve-3d]">
@@ -303,7 +303,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
 				}}
 			>
 				<div
-					className="absolute top-0 left-0 w-full h-full bg-[#1D1F2F] rounded-lg overflow-hidden transition-all duration-150 ease-out"
+					className="absolute top-0 left-0 w-full h-full bg-[#1D1F2F] rounded-xl overflow-hidden transition-all duration-150 ease-out"
 					style={{
 						transform:
 							current === index
@@ -317,7 +317,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
 							opacity: current === index ? 1 : 0.5,
 						}}
 						alt={title}
-						src={src}
+						src={image}
 						onLoad={imageLoaded}
 						loading="eager"
 						decoding="sync"
@@ -336,10 +336,10 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
 							: "opacity-0 invisible"
 					}`}
 				>
-					<h2 className="text-xl lg:text-2xl font-semibold relative uppercase mb-2">
+					<h2 className="text-xl lg:text-3xl font-semibold relative">
 						{title}
 					</h2>
-					<h4 className="text-gray-100 font-medium text-sm">
+					<h4 className="text-gray-100 font-medium text-sm lg:text-base mt-1">
 						{description}
 					</h4>
 				</article>
@@ -361,7 +361,7 @@ const CarouselControl = ({
 }: CarouselControlProps) => {
 	return (
 		<button
-			className={`w-10 h-10 flex items-center mx-2 justify-center bg-neutral-200 dark:bg-neutral-800 border-3 border-transparent rounded-full focus:border-[#6D64F7] focus:outline-none hover:-translate-y-0.5 active:translate-y-0.5 transition duration-200 ${
+			className={`w-10 h-10 flex items-center mx-2 justify-center bg-neutral-200 dark:bg-neutral-800 border-3 border-transparent rounded-full focus:border-secondary focus:outline-none hover:-translate-y-0.5 active:translate-y-0.5 transition duration-200 ${
 				type === "previous" ? "rotate-180" : ""
 			}`}
 			title={title}

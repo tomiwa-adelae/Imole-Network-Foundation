@@ -8,24 +8,9 @@ export const Blogs = () => {
 	return (
 		<div className="py-16">
 			<div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-				{latestNews.map(({ image, title, excerpt }, index) => (
+				{latestNews.map(({ image, title, excerpt, id }, index) => (
 					<BlogBox
-						key={index}
-						title={title}
-						excerpt={excerpt}
-						image={image}
-					/>
-				))}
-				{latestNews.map(({ image, title, excerpt }, index) => (
-					<BlogBox
-						key={index}
-						title={title}
-						excerpt={excerpt}
-						image={image}
-					/>
-				))}
-				{latestNews.map(({ image, title, excerpt }, index) => (
-					<BlogBox
+						id={id}
 						key={index}
 						title={title}
 						excerpt={excerpt}

@@ -1,3 +1,5 @@
+import Head from "next/head";
+import type { Metadata } from "next";
 import { OurGoals } from "@/components/OurGoals";
 import { OurVision } from "@/components/OurVision";
 import { Header } from "@/components/shared/Header";
@@ -9,6 +11,14 @@ import { ImageShowcase } from "@/components/shared/ImageShowcase";
 import { HereToHelp } from "@/components/HereToHelp";
 import { DonateCTA } from "@/components/DonateCTA";
 import { Testimonials } from "@/components/shared/Testimonials";
+
+export const metadata: Metadata = {
+	title: "About Us | Imole Network Foundation – Who We Are & What We Do",
+	description:
+		"Learn about Imole Network Foundation’s mission, vision, goals, and the heart behind our service to Nigerian communities. Together, we are the light in people's darkest moments.",
+	keywords:
+		"About Imole Foundation, Nigerian charity, nonprofit goals, mission and vision, humanitarian efforts, NGO Nigeria",
+};
 
 const page = () => {
 	return (

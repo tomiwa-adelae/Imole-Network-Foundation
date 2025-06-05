@@ -111,7 +111,6 @@ body {
 
 	--secondary: oklch(0.65 0.18 69.85); /* #F69939 adjusted for dark mode */
 	--secondary-foreground: oklch(0.1 0.01 69.85);
-
 	--muted: var(--secondary);
 	--muted-foreground: oklch(0.705 0.015 286.067);
 	--accent: var(--secondary);
@@ -148,7 +147,7 @@ body {
 
 @utility container {
 	margin-inline: auto;
-	width: 93%;
+	width: 90%;
 }
 
 html {

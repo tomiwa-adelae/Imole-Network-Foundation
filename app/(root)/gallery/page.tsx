@@ -1,15 +1,17 @@
+import type { Metadata } from "next";
+import { DonateCTA } from "@/components/DonateCTA";
 import { GalleryShowcase } from "@/components/GalleryShowcase";
 import { Header } from "@/components/shared/Header";
 import ImageLibrary from "@/components/shared/ImageLibrary";
+import { Testimonials } from "@/components/shared/Testimonials";
 import { galleryImages } from "@/constants";
 
-import type { Metadata } from "next";
 export const metadata: Metadata = {
-	title: "Innovation 4.0 Gallery | Experience the Moments",
+	title: "Gallery | Impact Moments from Imole Network Foundation",
 	description:
-		"Relive the excitement of past Innovation conferences through our photo and video gallery.",
+		"Browse powerful photos and videos showcasing the impact of Imole Network Foundation in communities across Nigeria—from food drives and school outreaches to health programs and volunteer efforts.",
 	keywords:
-		" event photos, past events, conference highlights, networking moments, business growth, conference, startup, future trends, john ogunjide, tomiwa, tomiwa adelae, innovation 3.0, innovation 4.0, innovation conference, conferences, conference, cornerstone international foundation, foundation, bill gate foundations, alternative to gates foundations, gates foundations, ACU, Ajayi Crowther University",
+		"Imole Foundation gallery, NGO photo gallery, charity events Nigeria, nonprofit impact photos, volunteer activities, humanitarian efforts Nigeria, Imole Network photos",
 };
 
 const page = async () => {
@@ -20,6 +22,8 @@ const page = async () => {
 			<div className="py-16 container">
 				<ImageLibrary images={galleryImages} />
 			</div>
+			<DonateCTA />
+			<Testimonials />
 		</div>
 	);
 };

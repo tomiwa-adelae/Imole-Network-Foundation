@@ -73,7 +73,7 @@ export function VolunteerForm() {
 		<div className="bg-[#F3EDDA] relative">
 			<div className="grid grid-cols-1 md:grid-cols-2">
 				<Image
-					src={"/assets/images/serving-img.jpg"}
+					src={"/assets/images/boy-smiling.jpg"}
 					alt={"A group of people in a picture"}
 					width={1000}
 					height={1000}

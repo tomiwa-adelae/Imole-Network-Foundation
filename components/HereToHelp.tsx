@@ -4,14 +4,14 @@ import { hereToHelp } from "@/constants";
 export const HereToHelp = () => {
 	return (
 		<div
-			className="text-white bg-scroll bg-no-repeat bg-cover bg-left py-16 flex items-center justify-center relative"
+			className="text-white bg-scroll bg-no-repeat bg-cover bg-left py-20 flex items-center justify-center relative"
 			style={{
 				backgroundImage: `url(/assets/images/help-bg.png)`,
 			}}
 		>
 			<div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-				<h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl">
-					We're here to <span className="text-secondary">Help</span>
+				<h2 className="font-semibold mb-4 md:mb-0 text-3xl md:text-4xl lg:text-5xl">
+					We're here to Help
 				</h2>
 				{hereToHelp.map(({ image, title, description }, index) => (
 					<div
@@ -21,14 +21,14 @@ export const HereToHelp = () => {
 						<Image
 							src={image}
 							alt={`${title}'s picture`}
-							width={1000}
-							height={1000}
-							className="size-[200px] object-cover"
+							width={100}
+							height={100}
+							className="object-cover"
 						/>
-						<h4 className="font-semibold text-black text-xl mt-6">
+						<h4 className="font-semibold text-black text-xl md:text-2xl mt-6">
 							{title}
 						</h4>
-						<p className="text-base mt-4 text-muted-foreground">
+						<p className="text-base leading-relaxed mt-2 text-muted-foreground">
 							{description}
 						</p>
 					</div>

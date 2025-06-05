@@ -18,7 +18,7 @@ export const Logo = () => {
 				alt="Imole Network Foundation logo"
 				width={1000}
 				height={1000}
-				className="size-14 lg:size-20 object-cover"
+				className="size-16 lg:size-20 object-cover"
 			/>
 			{/* <div className="logo-container responsive">
 				<div className="geometric-logo responsive">

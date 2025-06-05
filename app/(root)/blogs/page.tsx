@@ -1,8 +1,17 @@
+import type { Metadata } from "next";
 import { Blogs } from "@/components/Blogs";
 import { Header } from "@/components/shared/Header";
 import { DonateCTA } from "@/components/DonateCTA";
 import { Testimonials } from "@/components/shared/Testimonials";
 import { ImageShowcase } from "@/components/shared/ImageShowcase";
+
+export const metadata: Metadata = {
+	title: "Blog | Stories & Updates from Imole Network Foundation",
+	description:
+		"Stay updated with our latest projects, impact stories, community events, and inspiring tales of hope and transformation across Nigeria.",
+	keywords:
+		"Imole Foundation blog, Nigerian NGO news, charity stories Nigeria, nonprofit updates, humanitarian blog",
+};
 
 const page = () => {
 	return (

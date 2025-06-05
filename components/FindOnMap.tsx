@@ -38,8 +38,7 @@ export const FindOnMap = () => {
 			<div className="grid container h-full text-white">
 				<div className="z-20 container">
 					<h2 className="text-center font-semibold text-3xl md:text-4xl lg:text-5xl">
-						Find Us on{" "}
-						<span className="text-secondary">Google Maps</span>
+						Find us on Google Maps
 					</h2>
 					<div className="mt-8 flex flex-wrap items-center justify-between gap-4">
 						{contactDetails.map(
@@ -51,9 +50,9 @@ export const FindOnMap = () => {
 										className="flex items-center justify-start gap-4"
 									>
 										<div
-											className={`rounded-full p-5 ${bgColor}`}
+											className={`rounded-full p-4 lg:p-5 ${bgColor}`}
 										>
-											<Icon className="size-5" />
+											<Icon className="size-4 lg:size-5" />
 										</div>
 										<div>
 											<h4 className="font-medium text-base text-gray-300">

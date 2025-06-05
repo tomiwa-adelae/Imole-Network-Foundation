@@ -4,13 +4,22 @@ import { ProjectDetails } from "@/components/ProjectDetails";
 import { ImageShowcase } from "@/components/shared/ImageShowcase";
 import { Testimonials } from "@/components/shared/Testimonials";
 import { OurVolunteers } from "@/components/OurVolunteers";
+import { ourProjects } from "@/constants";
+import { redirect } from "next/navigation";
 
-const page = () => {
+const page = async ({ params }: { params: { id: string } }) => {
+	const { id } = params;
+
+	// Find the blog detail by ID
+	const details = ourProjects.find((news) => news.id === id);
+
+	// Optional: Handle case where ID is not found
+	if (!details) redirect("/not-found.tsx");
 	return (
 		<div className="relative">
 			<Header />
-			<ImageShowcase image={"/assets/images/children-smiling.jpg"} />
-			<ProjectDetails />
+			<ImageShowcase image={details.image} />
+			<ProjectDetails details={details} />
 			<DonateCTA />
 			<OurVolunteers />
 		</div>

@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export function GalleryShowcase({ images }: any) {
 	return (
-		<ImagesSlider className="h-screen" images={images}>
+		<ImagesSlider className="h-[50vh] lg:h-[80vh]" images={images}>
 			<motion.div
 				initial={{
 					opacity: 0,
@@ -25,7 +25,7 @@ export function GalleryShowcase({ images }: any) {
 				<h1 className="text-5xl mb-4 text-white lg:text-7xl font-bold text-center">
 					Our gallery
 				</h1>
-				<Button asChild size={"lg"}>
+				<Button variant={"purple"} asChild size={"lg"}>
 					<Link href="/volunteer">
 						<span>Join us</span>
 					</Link>

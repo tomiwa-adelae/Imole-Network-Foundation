@@ -24,23 +24,24 @@ export const Projects = () => {
 						const colSpan = `col-span-1 md:col-span-2 lg:col-span-${spanValue}`;
 
 						return (
-							<div
+							<Link
+								href={`/projects/${project.id}`}
 								key={project.id}
 								className={`${colSpan} relative rounded-lg group overflow-hidden`}
 							>
 								<Image
-									src={project.src}
+									src={project.image}
 									alt={project.title}
 									width={1000}
 									height={1000}
 									className="aspect-video w-full h-full object-cover group-hover:scale-[102%] transition-all cursor-pointer"
 								/>
 								<div className="absolute inset-0 bg-black/20 transition-all cursor-pointer" />
-								<div className="lg:opacity-0 opacity-100 group-hover:opacity-100 transition-all absolute bg-secondary bottom-3 lg:-bottom-100 group-hover:lg:bottom-5 left-5 rounded-lg text-white p-6 flex items-center justify-between gap-4">
+								<div className="lg:opacity-0 opacity-100 group-hover:opacity-100 transition-all absolute bg-[#660066] bottom-3 lg:-bottom-100 group-hover:lg:bottom-5 left-2 lg:left-5 rounded-lg text-white px-6 py-4 lg:p-6 flex items-center justify-between gap-4 w-[95%] md:w-auto">
 									<div>
 										<Link
-											href="/projects/12345"
-											className="font-semibold text-2xl lg:text-3xl hover:text-black transition-all"
+											href={`/projects/${project.id}`}
+											className="font-semibold text-xl md:text-2xl hover:text-gray-100 transition-all"
 										>
 											{project.title}
 										</Link>
@@ -56,7 +57,7 @@ export const Projects = () => {
 										<ArrowUpRight className="size-5" />
 									</Button>
 								</div>
-							</div>
+							</Link>
 						);
 					})}
 				</div>

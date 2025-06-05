@@ -6,7 +6,7 @@ import Link from "next/link";
 export const DonateCTA = () => {
 	return (
 		<div
-			className="relative w-full aspect-video max-h-[70vh] bg-cover bg-center bg-no-repeat"
+			className="relative w-full py-24 bg-cover aspect-auto bg-center bg-no-repeat"
 			style={{ backgroundImage: "url(/assets/images/donate-cta.jpg)" }}
 		>
 			{/* Overlay */}
@@ -14,7 +14,7 @@ export const DonateCTA = () => {
 
 			{/* Content */}
 			<div className="relative z-20 lg:container h-full w-full flex items-center justify-center">
-				<div className="text-center w-full text-white">
+				<div className="container text-center w-full text-white">
 					<h2 className="text-3xl md:text-4xl lg:text-6xl leading-tight font-semibold mb-6">
 						Children Need Your Help By Donating Today
 					</h2>

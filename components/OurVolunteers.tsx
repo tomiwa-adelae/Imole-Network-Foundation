@@ -3,18 +3,14 @@ import { ourVolunteers, socialLinks } from "@/constants";
 import { Button } from "./ui/button";
 
 export const OurVolunteers = ({
-	title = (
-		<>
-			Meet our <span className="text-secondary">Volunteers</span>
-		</>
-	),
+	title = <>Meet our Volunteers</>,
 }: {
 	title?: React.ReactNode;
 }) => {
 	return (
 		<div className="bg-[#ffffff] py-16">
 			<div className="container">
-				<h2 className="text-primary font-semibold text-3xl md:text-4xl lg:text-5xl text-center">
+				<h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl text-center">
 					{title}
 				</h2>
 				<div className="mt-8 flex flex-wrap items-center justify-center gap-10">

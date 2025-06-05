@@ -12,6 +12,7 @@ import { Testimonials } from "@/components/shared/Testimonials";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import { DonateCTA } from "@/components/DonateCTA";
 
 const page = () => {
 	return (
@@ -38,6 +39,7 @@ const page = () => {
 			<OurProjects />
 			<CTA />
 			<GalleryMarquee />
+			<DonateCTA />
 			<Testimonials />
 			<HereToHelp />
 			<OurVolunteers />

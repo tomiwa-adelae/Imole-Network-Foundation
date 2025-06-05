@@ -142,13 +142,13 @@ export const supportUs = [
 	{
 		image: "/assets/images/counter1.png",
 		number: "12",
-		suffix: "M",
+		suffix: "M+",
 		title: "Total Donation",
 	},
 	{
 		image: "/assets/images/counter2.png",
 		number: "10",
-		suffix: "K",
+		suffix: "K+",
 		title: "Project Founded",
 	},
 	{
@@ -183,7 +183,7 @@ export const ourVolunteers = [
 
 export const CTAs = [
 	{
-		image: "/assets/images/girl-smiling.jpg",
+		image: "/assets/images/gallery7.jpg",
 		title: "Join Us and Become a Volunteer",
 		icon: HeartHandshake,
 		description:
@@ -191,7 +191,7 @@ export const CTAs = [
 		slug: "/volunteer",
 		label: "Become a Volunteer",
 		buttonIcon: HandHelping,
-		overlay: "bg-secondary/30",
+		overlay: "bg-[#660066]/50",
 		hover: "hover:bg-primary",
 	},
 	{
@@ -204,28 +204,52 @@ export const CTAs = [
 		label: "Donate now",
 		buttonIcon: Heart,
 		overlay: "bg-primary/70",
-		hover: "hover:bg-secondary",
+		hover: "hover:bg-[#660066]",
 	},
 ];
 
 export const latestNews = [
 	{
-		image: "/assets/images/children-smiling.jpg",
-		title: "Imole Hosts Health Outreach in Kwara State",
+		id: "1",
+		image: "/assets/images/gallery7.jpg",
+		title: "Lighting the Path: How Education is Changing Lives in Rural Nigeria",
 		excerpt:
-			"Our team provided free medical care to over 500 villagers in Oro-Ago as part of our rural healthcare initiative.",
+			"At Imole, we believe education is the key to long-term transformation. In this post, we share stories of children whose lives are being changed through our community education programs from literacy to leadership.",
 	},
 	{
+		id: "2",
+		image: "/assets/images/children-medicine.jpg",
+		title: "Beyond Medicine: Bringing Health and Hope to the Undeserved",
+		excerpt:
+			"Health is more than just medicine; it's dignity. Read about our latest medical outreach in Ogun State, where we provided free checkups, medication, and health education to over 500 people.",
+	},
+	{
+		id: "3",
+		image: "/assets/images/gallery6.jpg",
+		title: "No Child Should Go to Bed Hungry: Our Food Relief Efforts",
+		excerpt:
+			"Hunger is a silent struggle in many communities. This blog details how our food relief initiative is reaching families in crisis and how one donated meal can restore hope.",
+	},
+	{
+		id: "4",
+		image: "/assets/images/serving-img.jpg",
+		title: "Volunteering with Impact: Real Stories from the Field",
+		excerpt:
+			"Meet three of our incredible volunteers who are giving their time and talent to serve others. From teaching to logistics, their stories show that anyone can make a difference.",
+	},
+	{
+		id: "5",
 		image: "/assets/images/gallery4.jpg",
-		title: "Free Health Outreach Brings Hope to Rural Villagers in Kwara",
+		title: "Why Community Partnerships Are the Heart of What We Do",
 		excerpt:
-			"With volunteer doctors and nurses on ground, Imole Network Foundation conducted a free medical outreach in rural Kwara State. Hundreds benefited from free consultations, medications, and health education sessions focused on malaria and maternal health.",
+			"We don’t work alone and we never want to. Learn how partnerships with local leaders, schools, and health workers help us reach more lives with greater impact.",
 	},
 	{
-		image: "/assets/images/gallery5.jpg",
-		title: "Volunteers Feed Over 500 Families During Ramadan Drive",
+		id: "6",
+		image: "/assets/images/boy-smiling.jpg",
+		title: "Raising the Next Generation of Leaders Through Service",
 		excerpt:
-			"During the holy month of Ramadan, Imole Foundation volunteers distributed food packages to over 500 vulnerable families in Lagos and Kaduna. “It’s not just about food, it’s about sharing love,” said one of the lead coordinators.",
+			"We’re not just helping we’re empowering. This article explores how youth involvement in our programs is shaping the next generation of compassionate Nigerian leaders.",
 	},
 ];
 
@@ -234,9 +258,6 @@ export const galleryImages = [
 		src: "/assets/images/children-smiling.jpg",
 	},
 	{
-		src: "/assets/images/girl-smiling.jpg",
-	},
-	{
 		src: "/assets/images/boy-smiling.jpg",
 	},
 	{
@@ -255,28 +276,25 @@ export const galleryImages = [
 		src: "/assets/images/gallery5.jpg",
 	},
 	{
-		src: "/assets/images/children-smiling.jpg",
+		src: "/assets/images/donate-cta.jpg",
 	},
 	{
-		src: "/assets/images/girl-smiling.jpg",
+		src: "/assets/images/gallery6.jpg",
 	},
 	{
-		src: "/assets/images/boy-smiling.jpg",
+		src: "/assets/images/gallery7.jpg",
 	},
 	{
-		src: "/assets/images/gallery1.jpg",
+		src: "/assets/images/gallery8.jpg",
 	},
 	{
-		src: "/assets/images/gallery2.jpg",
+		src: "/assets/images/volunteer-one.jpeg",
 	},
 	{
-		src: "/assets/images/gallery3.jpg",
+		src: "/assets/images/volunteer-three.jpg",
 	},
 	{
-		src: "/assets/images/gallery4.jpg",
-	},
-	{
-		src: "/assets/images/gallery5.jpg",
+		src: "/assets/images/volunteer-four.jpg",
 	},
 ];
 
@@ -294,7 +312,7 @@ export const hereToHelp = [
 			"We organize health outreaches, medical support, and awareness programs to ensure families and communities stay strong and safe.",
 	},
 	{
-		image: "/assets/images/help1.png",
+		image: "/assets/images/help3.png",
 		title: "Healthy Foods",
 		description:
 			"No one should go to bed hungry. We distribute nutritious meals and food supplies to vulnerable children and families across Nigeria.",
@@ -305,7 +323,7 @@ export const ourGoals = [
 	{
 		title: "Quality Education",
 		content:
-			"Every child deserves the chance to learn, grow, and dream. We work to break the barriers that keep children out of school — poverty, lack of supplies, or poor infrastructure. Our education initiatives include school supply drives, scholarship support, and mentorship programs to help children stay in school and succeed.",
+			"Every child deserves the chance to learn, grow, and dream. We work to break the barriers that keep children out of school such as poverty, lack of supplies, or poor infrastructure. Our education initiatives include school supply drives, scholarship support, and mentorship programs to help children stay in school and succeed.",
 	},
 	{
 		title: "Affordable Healthcare",
@@ -315,7 +333,7 @@ export const ourGoals = [
 	{
 		title: "Combat Hunger",
 		content:
-			"Hunger doesn’t just rob the body — it steals potential. We run feeding programs, distribute food relief packs, and support low-income families to ensure that children and adults alike have the nutrition they need to live healthy and productive lives.",
+			"Hunger doesn’t just rob the body, it steals potential. We run feeding programs, distribute food relief packs, and support low-income families to ensure that children and adults alike have the nutrition they need to live healthy and productive lives.",
 	},
 	{
 		title: "Community Service",
@@ -325,7 +343,7 @@ export const ourGoals = [
 	{
 		title: "Social Equity",
 		content:
-			"Our vision goes beyond short-term aid. We’re committed to creating systems that last — from supporting small businesses and women-led initiatives to providing clean water and sanitation education. Every goal is rooted in sustainability and fairness.",
+			"Our vision goes beyond short-term aid. We’re committed to creating systems that last, from supporting small businesses and women-led initiatives to providing clean water and sanitation education. Every goal is rooted in sustainability and fairness.",
 	},
 ];
 
@@ -370,7 +388,7 @@ export const ourProjects = [
 		title: "Back-to-School Drive",
 		description:
 			"Equipping children with school kits and materials so they can learn with confidence and dignity.",
-		src: "/assets/images/children-smiling.jpg",
+		image: "/assets/images/gallery7.jpg",
 		category: "Domestic & Transportation",
 	},
 	{
@@ -378,15 +396,15 @@ export const ourProjects = [
 		title: "Medical Outreach Program",
 		description:
 			"Bringing free medical care and health education to rural communities across Nigeria.",
-		src: "/assets/images/children-smiling.jpg",
-		category: "Education",
+		image: "/assets/images/children-medicine.jpg",
+		category: "Medical",
 	},
 	{
 		id: "3",
 		title: "Feed a Family Campaign",
 		description:
 			"Providing food packages and support to vulnerable families facing hunger and malnutrition",
-		src: "/assets/images/children-smiling.jpg",
+		image: "/assets/images/gallery6.jpg",
 		category: "Community Development",
 	},
 	{
@@ -394,23 +412,7 @@ export const ourProjects = [
 		title: "Health Support Initiative",
 		description:
 			"Providing food packages and support to vulnerable families facing hunger and malnutrition",
-		src: "/assets/images/children-smiling.jpg",
-		category: "Healthcare",
-	},
-	{
-		id: "5",
-		title: "Feed a Family Campaign",
-		description:
-			"Providing food packages and support to vulnerable families facing hunger and malnutrition",
-		src: "/assets/images/children-smiling.jpg",
-		category: "Community Development",
-	},
-	{
-		id: "6",
-		title: "Health Support Initiative",
-		description:
-			"Providing food packages and support to vulnerable families facing hunger and malnutrition",
-		src: "/assets/images/children-smiling.jpg",
+		image: "/assets/images/healthcare.jpg",
 		category: "Healthcare",
 	},
 ];
@@ -418,19 +420,19 @@ export const ourProjects = [
 export const testimonials = [
 	{
 		image: "/assets/images/user-one.jpeg",
-		name: "Tomiwa Adelae",
+		name: "Adebayo Yusuf",
 		testimony:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eius molestiae illo id, ab dolor modi, est aut atque iure facilis reiciendis ex exercitationem, perspiciatis fugiat consequuntur ? Dolor, itaque.",
+			"Volunteering with Imole changed the way I see community service. I thought I was giving my time, but I received so much joy, purpose, and a deeper connection to people.",
 		borderColor: "border-white",
-		bgColor: "bg-secondary/20",
-		textColor: "text-secondary",
+		bgColor: "bg-[#660066]/10",
+		textColor: "text-[#660066]",
 		rotate: "lg:-rotate-6",
 	},
 	{
 		image: "/assets/images/user-two.webp",
-		name: "Sandra Reddington",
+		name: " Adaeze Chukwu",
 		testimony:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eius molestiae illo id, ab dolor modi, est aut atque iure facilis reiciendis ex exercitationem, perspiciatis fugiat consequuntur ? Dolor, itaque.",
+			"I was a single mother struggling to feed my kids. The foundation showed up with food, school supplies, and love. They reminded me that I wasn’t alone.",
 		borderColor: "border-gray-200",
 		bgColor: "bg-[#FFFBFD]",
 		textColor: "text-primary",
@@ -438,12 +440,12 @@ export const testimonials = [
 	},
 	{
 		image: "/assets/images/user-three.jpg",
-		name: "Israel Ibitoye",
+		name: "Dr. Kunle Adebanjo",
 		testimony:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eius molestiae illo id, ab dolor modi, est aut atque iure facilis reiciendis ex exercitationem, perspiciatis fugiat consequuntur ? Dolor, itaque.",
-		borderColor: "border-orange-400",
-		bgColor: "bg-[#FEF8E8]",
-		textColor: "text-orange-400",
+			"We partnered with Imole on a medical outreach in a remote village, and I was deeply moved by the professionalism and compassion they showed. This is how change truly happens.",
+		borderColor: "border-secondary",
+		bgColor: "bg-secondary/10",
+		textColor: "text-secondary",
 		rotate: "lg:rotate-6",
 	},
 ];
@@ -455,8 +457,8 @@ export const volunteeringWays = [
 		description:
 			"We believe every child deserves a chance to learn and dream big. Through tutoring, mentorship, and learning support, we help build brighter futures one lesson at a time.",
 		borderColor: "border-white",
-		bgColor: "bg-secondary/20",
-		textColor: "text-secondary",
+		bgColor: "bg-[#660066]/10",
+		textColor: "text-[#660066]",
 		rotate: "lg:-rotate-6",
 	},
 	{
@@ -474,9 +476,9 @@ export const volunteeringWays = [
 		name: "Food Relief",
 		description:
 			"Hunger shouldn’t stand in the way of hope. We provide nutritious meals and food supplies to vulnerable children and families across communities.",
-		borderColor: "border-orange-400",
-		bgColor: "bg-[#FEF8E8]",
-		textColor: "text-orange-400",
+		borderColor: "border-secondary",
+		bgColor: "bg-secondary/10",
+		textColor: "text-secondary",
 		rotate: "lg:rotate-6",
 	},
 ];

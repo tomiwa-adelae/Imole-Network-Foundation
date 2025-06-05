@@ -4,19 +4,17 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 import { Heart } from "lucide-react";
 
-export const ProjectDetails = () => {
+export const ProjectDetails = ({ details }: { details: any }) => {
 	return (
 		<div className="py-10">
 			<div className="container grid grid-cols-1 lg:grid-cols-6 gap-4">
 				<div className="col-span-1 lg:col-span-4">
 					<h2 className="font-semibold text-2xl lg:text-3xl">
-						Feed a Family Campaign
+						{details.title}
 					</h2>
 					<div className="space-y-4 mt-3">
 						<p className="text-base leading-relaxed">
-							When to Use Lorem Ipsum generally, lorem ipsum is
-							best suited to keeping template fo looking bare or
-							minimizing the distractions of the draft copy.
+							{details.description}
 							<br />
 							Second, use lorem ipsum if you think placeholder
 							text will distracting. in voluptate velit esse.
@@ -78,13 +76,11 @@ export const ProjectDetails = () => {
 						<div className="mt-4 space-y-4">
 							<div className="flex items-center justify-between gap-4 text-sm md:text-base text-gray-100">
 								<p>Category:</p>
-								<p className="text-white">
-									Business, Marketing
-								</p>
+								<p className="text-white">{details.category}</p>
 							</div>
 							<div className="flex items-center justify-between gap-4 text-sm md:text-base text-gray-100">
 								<p>Author:</p>
-								<p className="text-white">Tomiwa Adelae</p>
+								<p className="text-white">Admin</p>
 							</div>
 							<div className="flex items-center justify-between gap-4 text-sm md:text-base text-gray-100">
 								<p>Date:</p>
