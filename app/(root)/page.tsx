@@ -30,7 +30,7 @@ const page = () => {
 					healthcare, and social development initiatives.
 				</p>
 				<Button variant="secondary" asChild size="lg">
-					<Link href="/">
+					<Link href="/about">
 						Learn more about us <ChevronRight />
 					</Link>
 				</Button>

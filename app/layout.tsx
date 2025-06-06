@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 	keywords:
 		"Imole Foundation, Nigerian NGO, community support, nonprofit in Nigeria, education charity, health outreach, food relief, humanitarian organization Nigeria",
 	openGraph: {
-		images: "/assets/opengraph.jpg",
+		images: "/assets/opengraph.png",
 	},
 	metadataBase: new URL("http://imolefoundation.vercel.app"),
 };
@@ -30,8 +30,8 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<Head>
-				<meta property="og:image" content="/opengraph.jpg" />
-				<meta property="og:image" content="/assets/opengraph.jpg" />
+				<meta property="og:image" content="/opengraph.png" />
+				<meta property="og:image" content="/assets/opengraph.png" />
 				<meta
 					name="viewport"
 					content="width=device-width, initial-scale=1.0, user-scalable=no"
