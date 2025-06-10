@@ -11,7 +11,7 @@ const dmsans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-	title: "Imọlẹ Progressive Network Foundation | Serving Humanity with Love and Light",
+	title: "Imọlẹ Progressive Network Foundation",
 	description:
 		"Imọlẹ Progressive Network Foundation is a Nigerian non-profit dedicated to empowering communities through education, health support, and food relief. Join us in serving people and changing lives.",
 	keywords:

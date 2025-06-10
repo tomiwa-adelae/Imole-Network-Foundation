@@ -5,7 +5,7 @@ import { OurVolunteers } from "@/components/OurVolunteers";
 import { Showcase } from "@/components/shared/Showcase";
 
 export const metadata: Metadata = {
-	title: "Donate | Support Imọlẹ Progressive Network Foundation’s Mission to Help Others",
+	title: "Donate | Support Imọlẹ Progressive Network Foundation",
 	description:
 		"Support our work with your donation. Whether through bank transfer or online giving, your gift helps provide education, health care, and meals to those in need.",
 	keywords:

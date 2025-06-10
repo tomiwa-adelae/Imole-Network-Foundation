@@ -7,7 +7,7 @@ import { Testimonials } from "@/components/shared/Testimonials";
 import { VolunteeringWays } from "@/components/VolunteeringWays";
 
 export const metadata: Metadata = {
-	title: "Become a Volunteer | Join the Imọlẹ Progressive Network Foundation Family",
+	title: "Become a Volunteer | Imọlẹ Progressive Network Foundation",
 	description:
 		"Volunteer with Imọlẹ Progressive Network Foundation and be part of real impact in education, health, and food relief efforts across Nigerian communities.",
 	keywords:

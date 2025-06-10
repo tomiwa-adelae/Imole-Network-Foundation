@@ -6,7 +6,7 @@ import { Testimonials } from "@/components/shared/Testimonials";
 import { ImageShowcase } from "@/components/shared/ImageShowcase";
 
 export const metadata: Metadata = {
-	title: "Blog | Stories & Updates from Imọlẹ Progressive Network Foundation",
+	title: "Blog | Imọlẹ Progressive Network Foundation",
 	description:
 		"Stay updated with our latest projects, impact stories, community events, and inspiring tales of hope and transformation across Nigeria.",
 	keywords:

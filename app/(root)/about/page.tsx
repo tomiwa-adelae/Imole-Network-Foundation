@@ -13,7 +13,7 @@ import { DonateCTA } from "@/components/DonateCTA";
 import { Testimonials } from "@/components/shared/Testimonials";
 
 export const metadata: Metadata = {
-	title: "About Us | Imọlẹ Progressive Network Foundation – Who We Are & What We Do",
+	title: "About Us | Imọlẹ Progressive Network Foundation",
 	description:
 		"Learn about Imọlẹ Progressive Network Foundation’s mission, vision, goals, and the heart behind our service to Nigerian communities. Together, we are the light in people's darkest moments.",
 	keywords:

@@ -7,7 +7,7 @@ import { Testimonials } from "@/components/shared/Testimonials";
 import { galleryImages } from "@/constants";
 
 export const metadata: Metadata = {
-	title: "Gallery | Impact Moments from Imọlẹ Progressive Network Foundation",
+	title: "Gallery | Imọlẹ Progressive Network Foundation",
 	description:
 		"Browse powerful photos and videos showcasing the impact of Imọlẹ Progressive Network Foundation in communities across Nigeria—from food drives and school outreaches to health programs and volunteer efforts.",
 	keywords:
