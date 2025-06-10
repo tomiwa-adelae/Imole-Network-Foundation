@@ -17,23 +17,9 @@ export const metadata: Metadata = {
 	keywords:
 		"Imọlẹ Foundation, Nigerian NGO, community support, nonprofit in Nigeria, education charity, health outreach, food relief, humanitarian organization Nigeria",
 	openGraph: {
-		title: "Imọlẹ Progressive Network Foundation",
-		description:
-			"Empowering communities in Nigeria through education, healthcare, and food relief.",
-		url: "https://imoleprogressivenetwork.org",
-		siteName: "Imọlẹ Foundation",
-		images: [
-			{
-				url: "/assets/opengraph.png", // ✅ Relative to metadataBase
-				width: 1200,
-				height: 630,
-				alt: "Imọlẹ Foundation OG Image",
-			},
-		],
-		locale: "en_US",
-		type: "website",
+		images: "/assets/images/opengraph.png",
 	},
-	metadataBase: new URL("https://imoleprogressivenetwork.org"), // ✅ Use your live domain
+	metadataBase: new URL("https://imoleprogressivenetwork.org"),
 };
 
 export default function RootLayout({
@@ -43,6 +29,23 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<Head>
+				<meta property="og:image" content="/opengraph.png" />
+				<meta
+					property="og:image"
+					content="/assets/images/opengraph.png"
+				/>
+				<meta
+					name="viewport"
+					content="width=device-width, initial-scale=1.0, user-scalable=no"
+				/>
+				<meta
+					data-n-head="ssr"
+					data-hid="viewport"
+					name="viewport"
+					content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1"
+				/>
+			</Head>
 			<body className={`${dmsans.className} antialiased`}>
 				{children}
 				<Toaster />
