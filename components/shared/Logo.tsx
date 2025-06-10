@@ -23,7 +23,9 @@ export const Logo = () => {
 			<h2 className="text-lg md:text-xl font-semibold leading-5 uppercase">
 				Imọlẹ progressive
 				<br />
-				<span className="text-base">Network Foundation</span>
+				<span className="text-base">
+					Network <span className="hidden md:block">Foundation</span>
+				</span>
 			</h2>
 		</Link>
 	);
