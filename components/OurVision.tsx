@@ -19,9 +19,9 @@ export const OurVision = () => {
 							Our vision
 						</h2>
 						<p className="text-base mt-2 leading-relaxed">
-							At Imole Network Foundation, our vision is to see a
-							Nigeria and an Africa where no child is denied
-							education, no family lacks healthcare, and no
+							At Imọlẹ Progressive Network Foundation, our vision
+							is to see a Nigeria and an Africa where no child is
+							denied education, no family lacks healthcare, and no
 							community is left behind. We envision a future where
 							compassion drives action, and every undeserved
 							person has the opportunity, dignity, and support

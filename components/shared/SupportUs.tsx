@@ -34,7 +34,7 @@ export const SupportUs = () => {
 					<div className="z-20 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-4">
 						<div>
 							<h2 className="font-semibold text-3xl md:text-4xl lg:text-5xl">
-								Support Imole Foundations
+								Support Imọlẹ Foundations
 							</h2>
 							<p className="text-base mt-1 mb-6 leading-relaxed">
 								Your generosity fuels our mission. With your

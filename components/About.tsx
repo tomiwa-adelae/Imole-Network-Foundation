@@ -24,16 +24,17 @@ export const About = () => {
 							</span>
 						</h2>
 						<p className="text-base mt-2 md:mt-4 mb-6 leading-relaxed">
-							Imole means light and that’s exactly what we bring.{" "}
-							<br /> At Imole Network Foundation, we are a
-							Nigerian nonprofit passionate about transforming
-							lives through compassion, education, healthcare, and
-							community empowerment. <br /> We believe that every
-							life matters and that real change begins when we
-							serve those most in need. From undeserved rural
-							areas to urban communities, we stand in the gap,
-							spreading hope, love, and light. Join us in building
-							a better Nigeria, one life at a time.
+							Imọlẹ means light and that’s exactly what we bring.{" "}
+							<br /> At Imọlẹ Progressive Network Foundation, we
+							are a Nigerian nonprofit passionate about
+							transforming lives through compassion, education,
+							healthcare, and community empowerment. <br /> We
+							believe that every life matters and that real change
+							begins when we serve those most in need. From
+							undeserved rural areas to urban communities, we
+							stand in the gap, spreading hope, love, and light.
+							Join us in building a better Nigeria, one life at a
+							time.
 						</p>
 						<Button variant="secondary" asChild size="lg">
 							<Link href="/about">Learn more</Link>

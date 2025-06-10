@@ -15,23 +15,15 @@ export const Logo = () => {
 		>
 			<Image
 				src={"/assets/images/logo.png"}
-				alt="Imole Network Foundation logo"
+				alt="Imọlẹ Progressive Network Foundation logo"
 				width={1000}
 				height={1000}
 				className="size-16 lg:size-20 object-cover"
 			/>
-			{/* <div className="logo-container responsive">
-				<div className="geometric-logo responsive">
-					<div className="hex responsive hex1"></div>
-					<div className="hex responsive hex2"></div>
-					<div className="hex responsive hex3"></div>
-					<div className="hex responsive hex4"></div>
-				</div>
-			</div> */}
 			<h2 className="text-lg md:text-xl font-semibold leading-5 uppercase">
-				Imole Network
+				Imọlẹ progressive
 				<br />
-				<span className="text-base">Foundation</span>
+				<span className="text-base">Network Foundation</span>
 			</h2>
 		</Link>
 	);

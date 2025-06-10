@@ -30,7 +30,7 @@ export const Projects = () => {
 								className={`${colSpan} relative rounded-lg group overflow-hidden`}
 							>
 								<Image
-									src={project.image}
+									src={project.image[0]}
 									alt={project.title}
 									width={1000}
 									height={1000}
@@ -41,7 +41,7 @@ export const Projects = () => {
 									<div>
 										<Link
 											href={`/projects/${project.id}`}
-											className="font-semibold text-xl md:text-2xl hover:text-gray-100 transition-all"
+											className="font-semibold text-xl md:text-2xl hover:text-gray-100 transition-all line-clamp-1"
 										>
 											{project.title}
 										</Link>

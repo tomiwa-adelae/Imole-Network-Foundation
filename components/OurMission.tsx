@@ -12,13 +12,13 @@ export const OurMission = () => {
 							Our mission
 						</h2>
 						<p className="text-base mt-2 leading-relaxed">
-							At Imole Network Foundation, our mission is to
-							uplift lives and restore hope by meeting real needs
-							in real communities. We are committed to creating a
-							society where every child, every family, and every
-							undeserved individual has the opportunity to thrive
-							through education, health, nourishment, and
-							empowerment.
+							At Imọlẹ Progressive Network Foundation, our mission
+							is to uplift lives and restore hope by meeting real
+							needs in real communities. We are committed to
+							creating a society where every child, every family,
+							and every undeserved individual has the opportunity
+							to thrive through education, health, nourishment,
+							and empowerment.
 						</p>
 						<div className="grid gap-4 mt-4 text-base">
 							<p>

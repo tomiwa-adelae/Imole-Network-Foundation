@@ -8,11 +8,11 @@ import { Testimonials } from "@/components/shared/Testimonials";
 import { GalleryMarquee } from "@/components/GalleryMarquee";
 
 export const metadata: Metadata = {
-	title: "Contact Us | Imole Network Foundation – Get in Touch Today",
+	title: "Contact Us | Imọlẹ Progressive Network Foundation – Get in Touch Today",
 	description:
-		"Have questions, want to collaborate, or need help? Reach out to Imole Network Foundation. We’re here to listen, serve, and grow stronger together.",
+		"Have questions, want to collaborate, or need help? Reach out to Imọlẹ Progressive Network Foundation. We’re here to listen, serve, and grow stronger together.",
 	keywords:
-		"Contact Imole Foundation, Nigerian NGO contact, reach Imole Foundation, support nonprofit Nigeria",
+		"Contact Imọlẹ Foundation, Nigerian NGO contact, reach Imọlẹ Foundation, support nonprofit Nigeria",
 };
 
 const page = () => {

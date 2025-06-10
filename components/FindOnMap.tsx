@@ -1,23 +1,17 @@
+import { emailAddress, phoneNumber } from "@/constants";
 import { Mail, MapPin, Phone } from "lucide-react";
-import dynamic from "next/dynamic";
 
-// const ContactLocation = dynamic(
-// 	() => import("@/components/ContactLocation").then((mod) => mod.default),
-// 	{
-// 		ssr: false,
-// 	}
-// );
 export const FindOnMap = () => {
 	const contactDetails = [
 		{
 			title: "Call us",
-			details: "+234 801 234 5678",
+			details: phoneNumber,
 			bgColor: "bg-primary",
 			icon: Phone,
 		},
 		{
 			title: "Email us",
-			details: "info@imolefoundation.com",
+			details: emailAddress,
 			bgColor: "bg-secondary",
 			icon: Mail,
 		},
@@ -58,9 +52,18 @@ export const FindOnMap = () => {
 											<h4 className="font-medium text-base text-gray-300">
 												{title}
 											</h4>
-											<p className="text-lg md:text-xl mt-1">
+											<a
+												href={
+													index === 0
+														? `tel:${details}`
+														: index === 1
+														? `mailto:${details}`
+														: ""
+												}
+												className="text-lg md:text-xl mt-1 hover:text-secondary transition-all"
+											>
 												{details}
-											</p>
+											</a>
 										</div>
 									</div>
 								);

@@ -31,6 +31,8 @@ import Image from "next/image";
 import { RequiredAsterisk } from "../shared/RequiredAsterisk";
 import { formatMoneyInput, handleKeyDown } from "@/lib/utils";
 import { Heart } from "lucide-react";
+import { volunteerForm } from "@/lib/actions/user/volunteer.actions";
+import { useRouter } from "next/navigation";
 
 const FormSchema = z.object({
 	name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -45,6 +47,7 @@ const FormSchema = z.object({
 });
 
 export function VolunteerForm() {
+	const router = useRouter();
 	const [value, setValue] = useState<string | undefined>(undefined);
 	const form = useForm<z.infer<typeof FormSchema>>({
 		resolver: zodResolver(FormSchema),
@@ -57,16 +60,24 @@ export function VolunteerForm() {
 		},
 	});
 
-	function onSubmit(data: z.infer<typeof FormSchema>) {
-		toast("You submitted the following values", {
-			description: (
-				<pre className="mt-2 w-[320px] rounded-md bg-neutral-950 p-4">
-					<code className="text-white">
-						{JSON.stringify(data, null, 2)}
-					</code>
-				</pre>
-			),
-		});
+	async function onSubmit(data: z.infer<typeof FormSchema>) {
+		try {
+			const volunteer = {
+				name: data.name,
+				email: data.email,
+				phoneNumber: value,
+				area: data.area,
+				message: data.message,
+			};
+			const res = await volunteerForm(volunteer);
+
+			if (res?.status == 400) return toast.error(res?.message);
+
+			toast.success(res?.message);
+			router.push(`/success-volunteer?id=${res?.volunteer?._id}`);
+		} catch (error: any) {
+			toast.error(error.message || "An error occurred!");
+		}
 	}
 
 	return (

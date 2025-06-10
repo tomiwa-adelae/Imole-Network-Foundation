@@ -108,7 +108,7 @@ export const BlogDetails = ({ details }: { details: any }) => {
 								<div className="text-center flex flex-col items-center justify-center">
 									<Image
 										src={"/assets/images/logo.png"}
-										alt="Imole Network Foundation logo"
+										alt="Imọlẹ Progressive Network Foundation logo"
 										width={1000}
 										height={1000}
 										className="size-20 object-cover mx-auto"

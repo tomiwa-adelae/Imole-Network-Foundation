@@ -5,7 +5,6 @@ import {
 	HandCoins,
 	HeartHandshake,
 	Heart,
-	ChevronRight,
 	HandHelping,
 } from "lucide-react";
 
@@ -59,9 +58,10 @@ export const mobileNavLinks = [
 	},
 ];
 
-export const emailAddress = "support@imole.com";
-export const phoneNumber = "+234 801 234 5678";
-export const address = "Block 7, Plot 90, Ikeja, Lagos State";
+export const emailAddress = "imoleprogressivenetwork@gmail.com";
+export const phoneNumber = "+234 814 613 1427";
+export const address =
+	"N0. 1, Government Estate Opposite CIB, Alagbaka, Akure, Ondo State, Nigeria";
 
 export const footerDetails = [
 	{
@@ -124,17 +124,17 @@ export const socialLinks = [
 	{
 		name: "X",
 		icon: Twitter,
-		slug: "www.twitter.com",
+		slug: "https://www.twitter.com",
 	},
 	{
 		name: "Instagram",
 		icon: Facebook,
-		slug: "www.facebook.com",
+		slug: "https://www.facebook.com",
 	},
 	{
 		name: "Instagram",
 		icon: Instagram,
-		slug: "www.instagram.com",
+		slug: "https://www.instagram.com",
 	},
 ];
 
@@ -155,6 +155,19 @@ export const supportUs = [
 		image: "/assets/images/counter3.png",
 		number: "805",
 		title: "Total Volunteers",
+	},
+];
+
+export const ourLeadership = [
+	{
+		image: "/assets/images/director.jpg",
+		name: "Engr. Michael Adeyanju",
+		portfolio: "Director General",
+	},
+	{
+		image: "/assets/images/secretary.jpg",
+		name: "Comrade Olorunfemi Christopher Ibukun",
+		portfolio: "Secretary General",
 	},
 ];
 
@@ -214,7 +227,7 @@ export const latestNews = [
 		image: "/assets/images/gallery7.jpg",
 		title: "Lighting the Path: How Education is Changing Lives in Rural Nigeria",
 		excerpt:
-			"At Imole, we believe education is the key to long-term transformation. In this post, we share stories of children whose lives are being changed through our community education programs from literacy to leadership.",
+			"At Imọlẹ, we believe education is the key to long-term transformation. In this post, we share stories of children whose lives are being changed through our community education programs from literacy to leadership.",
 	},
 	{
 		id: "2",
@@ -255,7 +268,19 @@ export const latestNews = [
 
 export const galleryImages = [
 	{
-		src: "/assets/images/children-smiling.jpg",
+		src: "/assets/images/lennon-1.jpg",
+	},
+	{
+		src: "/assets/images/lennon-2.jpg",
+	},
+	{
+		src: "/assets/images/gallery2.jpg",
+	},
+	{
+		src: "/assets/images/lennon-3.jpg",
+	},
+	{
+		src: "/assets/images/lennon-4.jpg",
 	},
 	{
 		src: "/assets/images/boy-smiling.jpg",
@@ -263,12 +288,41 @@ export const galleryImages = [
 	{
 		src: "/assets/images/gallery1.jpg",
 	},
-	{
-		src: "/assets/images/gallery2.jpg",
-	},
+
 	{
 		src: "/assets/images/gallery3.jpg",
 	},
+	{
+		src: "/assets/images/lennon-5.jpg",
+	},
+	{
+		src: "/assets/images/lennon-6.jpg",
+	},
+	{
+		src: "/assets/images/lennon-7.jpg",
+	},
+	{
+		src: "/assets/images/lennon-8.jpg",
+	},
+	{
+		src: "/assets/images/lennon-9.jpg",
+	},
+	{
+		src: "/assets/images/lennon-10.jpg",
+	},
+	{
+		src: "/assets/images/lennon-11.jpg",
+	},
+	{
+		src: "/assets/images/lennon-12.jpg",
+	},
+	{
+		src: "/assets/images/lennon-13.jpg",
+	},
+	{
+		src: "/assets/images/children-smiling.jpg",
+	},
+
 	{
 		src: "/assets/images/gallery4.jpg",
 	},
@@ -384,36 +438,174 @@ export const subjects = [
 
 export const ourProjects = [
 	{
-		id: "1",
-		title: "Back-to-School Drive",
-		description:
-			"Equipping children with school kits and materials so they can learn with confidence and dignity.",
-		image: "/assets/images/gallery7.jpg",
-		category: "Domestic & Transportation",
+		id: "13",
+		title: "Renovated Classroom Block for Lennon Jubilee High School",
+		overview:
+			"At Imọlẹ Progressive Network Foundation, we believe that a quality learning environment is essential to nurturing the leaders of tomorrow. In line with our commitment to educational upliftment and youth empowerment, we embarked on a renovation project at Lennon Jubilee High School—a school with great potential but limited infrastructure.",
+		description: [
+			"The school’s existing classroom block was in a state of disrepair—cracked walls, leaking roofs, broken windows, and insufficient seating. These conditions not only hindered learning but also compromised the safety and dignity of the students and staff.",
+			"Understanding the urgent need for change, our foundation took bold action. Over several weeks, our team, along with local contractors and volunteers, completely renovated the classroom block, transforming it into a clean, well-lit, and fully functional learning space.",
+			"The scope of the renovation included:",
+			"Structural repairs and reinforcement of walls and roofing",
+			"Installation of new desks, chairs, and blackboards",
+			"Tiling and repainting of classrooms in bright, welcoming colors",
+			"Provision of ceiling fans and ventilation to enhance comfort",
+			"Installation of windows and doors for security and weather protection",
+		],
+		dedication: [
+			"This project was dedicated to the advancement of education and the empowerment of youth, especially in underserved communities. With these improved facilities, students can now learn in a space that encourages focus, creativity, and confidence.",
+			"Since reopening the block, school attendance has increased, and teachers report greater enthusiasm and participation from students. It is our firm belief that this investment will ripple through the lives of these young minds—building self-worth and preparing them to become the next generation of leaders.",
+			"This classroom block stands as a beacon of hope, possibility, and progress. It is more than just a building—it is a foundation for dreams, a space where destinies are shaped, and a promise from Imọlẹ Progressive Network Foundation that we are here to serve, uplift, and inspire.",
+		],
+		image: [
+			"/assets/images/lennon-6.jpg",
+			"/assets/images/lennon-7.jpg",
+			"/assets/images/lennon-8.jpg",
+		],
+		category: "Education",
+		author: "Mr. Babarinde",
+		date: "26th of May, 2025",
 	},
 	{
-		id: "2",
-		title: "Medical Outreach Program",
-		description:
-			"Bringing free medical care and health education to rural communities across Nigeria.",
-		image: "/assets/images/children-medicine.jpg",
-		category: "Medical",
+		id: "14",
+		title: "Free Medical Outreach in Oke-Odo Community",
+		overview:
+			"Health is wealth, yet many in underserved communities lack access to basic healthcare. Imole Network Foundation organized a free medical outreach in Oke-Odo to provide care, screenings, and treatment to residents in need.",
+		description: [
+			"The outreach was held at a local primary school, transformed into a temporary clinic with consultation booths, pharmacy stations, and diagnostic areas.",
+			"Over 400 people received free medical services including malaria testing, blood pressure checks, eye examinations, and general consultations.",
+			"We partnered with volunteer doctors, nurses, and pharmacists to ensure professional and compassionate care throughout the day.",
+			"Children were dewormed, and the elderly were given essential medications and health education resources.",
+			"Beyond treatment, we focused on preventive care—educating attendees on hygiene, nutrition, and disease prevention.",
+		],
+		dedication: [
+			"This project was dedicated to improving health access for vulnerable populations. We believe everyone deserves the right to wellness, regardless of income or location.",
+			"The joy and relief on the faces of patients reaffirmed our mission. This outreach wasn’t just medical—it was deeply human.",
+			"We are committed to expanding our medical programs, reaching more communities with compassionate care.",
+		],
+		image: ["/assets/images/children-medicine.jpg"],
+		category: "Health",
+		author: "Nurse Adedayo",
+		date: "10th of April, 2025",
 	},
 	{
-		id: "3",
-		title: "Feed a Family Campaign",
-		description:
-			"Providing food packages and support to vulnerable families facing hunger and malnutrition",
-		image: "/assets/images/gallery6.jpg",
+		id: "15",
+		title: "Back-to-School Drive in Ilupeju",
+		overview:
+			"Recognizing the financial strain many parents face during school resumption, Imole Network Foundation launched a back-to-school drive to equip children with basic learning materials.",
+		description: [
+			"Over 300 schoolchildren received backpacks, notebooks, pens, school sandals, and uniforms.",
+			"We partnered with local vendors to source quality items at affordable rates, enabling us to reach more students.",
+			"The distribution event included motivational talks to inspire children to dream big and stay focused.",
+			"Parents expressed deep gratitude, and many students who had missed school due to lack of supplies returned immediately.",
+		],
+		dedication: [
+			"This initiative was dedicated to promoting access to education and relieving the burden on struggling families.",
+			"Each backpack given represents a door reopened to learning, confidence, and hope.",
+			"We’re proud to walk with the next generation, ensuring no child is left behind due to poverty.",
+		],
+		image: [
+			"/assets/images/gallery7.jpg",
+			"/assets/images/gallery3.jpg",
+			"/assets/images/serving-img.jpg",
+		],
+		category: "Education",
+		author: "Ms. Omolola",
+		date: "5th of January, 2025",
+	},
+	{
+		id: "16",
+		title: "Clean Water Project for Ayetoro Village",
+		overview:
+			"Access to safe drinking water remains a challenge in many rural areas. Imole Network Foundation responded by providing a clean and sustainable water source to Ayetoro village.",
+		description: [
+			"A borehole was drilled and fitted with a hand pump and filtration system to serve over 600 residents.",
+			"We ensured community involvement from start to finish, creating a sense of ownership and responsibility.",
+			"Health officers sensitized the villagers on hygiene, water conservation, and sanitation practices.",
+			"This project drastically reduced cases of waterborne diseases in the area within just weeks of completion.",
+		],
+		dedication: [
+			"This clean water project was dedicated to health, dignity, and sustainable development.",
+			"Ayetoro now has not just water, but also a future less burdened by disease and daily struggles.",
+			"This is just one of many steps we plan to take in bridging the water gap in underserved communities.",
+		],
+		image: ["/assets/images/gallery5.jpg", "/assets/images/gallery4.jpg"],
+		category: "Health",
+		author: "Engr. Ayoola",
+		date: "3rd of March, 2025",
+	},
+	{
+		id: "17",
+		title: "Food Relief Campaign in Ibadan",
+		overview:
+			"In response to rising food insecurity, Imole Network Foundation launched a food relief campaign to support families facing hardship in Ibadan.",
+		description: [
+			"Over 1,000 food packages were distributed, containing rice, beans, garri, cooking oil, and hygiene supplies.",
+			"The event targeted widows, the elderly, and low-income families in the Aremo and Mokola districts.",
+			"Volunteers helped with packaging and delivery, ensuring orderly distribution and fairness.",
+			"The campaign brought hope, smiles, and temporary relief to many families struggling to afford a daily meal.",
+		],
+		dedication: [
+			"This project was dedicated to restoring dignity through food and care.",
+			"We know that a well-fed child can learn better, and a supported mother can build again.",
+			"Imole will continue to serve where hunger persists, guided by compassion and action.",
+		],
+		image: [
+			"/assets/images/gallery6.jpg",
+			"/assets/images/children-smiling.jpg",
+		],
+		category: "Food & Nutrition",
+		author: "Mrs. Ajibola",
+		date: "18th of February, 2025",
+	},
+	{
+		id: "18",
+		title: "Digital Literacy Workshop for Teens",
+		overview:
+			"With the world rapidly digitizing, Imole Network Foundation hosted a free digital literacy workshop for teenagers to build 21st-century skills and bridge the digital divide.",
+		description: [
+			"The 5-day workshop covered basic computer use, internet safety, digital communication, and introductory coding.",
+			"Participants learned how to create presentations, send professional emails, and explore online learning tools.",
+			"The workshop was held in partnership with a local tech hub, with mentorship from young professionals in tech.",
+			"Each teen left with a certificate and a newfound curiosity for the digital world.",
+		],
+		dedication: [
+			"This project was dedicated to preparing our youth for future opportunities in a tech-driven world.",
+			"We believe digital access is not a privilege but a necessity for every child.",
+			"This is part of our broader mission to empower the next generation with knowledge and opportunity.",
+		],
+		image: [
+			"/assets/images/gallery1.jpg",
+			"/assets/images/boy-smiling.jpg",
+		],
+		category: "Youth Empowerment",
+		author: "Mr. Dauda",
+		date: "22nd of June, 2025",
+	},
+	{
+		id: "19",
+		title: "Community Sanitation Day in Bariga",
+		overview:
+			"Environmental hygiene is crucial to public health. Imole Network Foundation mobilized the Bariga community for a massive cleanup and sensitization campaign.",
+		description: [
+			"Volunteers and residents came together to clean up streets, gutters, and marketplaces plagued by waste.",
+			"We distributed sanitation kits including gloves, brooms, face masks, and trash bags.",
+			"Health officials held open-air talks on proper waste disposal and disease prevention.",
+			"The event fostered community bonding and inspired a renewed sense of environmental responsibility.",
+		],
+		dedication: [
+			"This project was dedicated to promoting clean, healthy, and livable environments for all.",
+			"A clean community is a safe community—and together, we proved that change is possible when we unite.",
+			"Imole Network Foundation will continue to support environmental efforts across more local areas.",
+		],
+		image: [
+			"/assets/images/gallery2.jpg",
+			"/assets/images/gallery4.jpg",
+			"/assets/images/lennon-11.jpg",
+		],
 		category: "Community Development",
-	},
-	{
-		id: "4",
-		title: "Health Support Initiative",
-		description:
-			"Providing food packages and support to vulnerable families facing hunger and malnutrition",
-		image: "/assets/images/healthcare.jpg",
-		category: "Healthcare",
+		author: "Dr. Sanni",
+		date: "9th of May, 2025",
 	},
 ];
 
@@ -422,7 +614,7 @@ export const testimonials = [
 		image: "/assets/images/user-one.jpeg",
 		name: "Adebayo Yusuf",
 		testimony:
-			"Volunteering with Imole changed the way I see community service. I thought I was giving my time, but I received so much joy, purpose, and a deeper connection to people.",
+			"Volunteering with Imọlẹ changed the way I see community service. I thought I was giving my time, but I received so much joy, purpose, and a deeper connection to people.",
 		borderColor: "border-white",
 		bgColor: "bg-[#660066]/10",
 		textColor: "text-[#660066]",
@@ -442,7 +634,7 @@ export const testimonials = [
 		image: "/assets/images/user-three.jpg",
 		name: "Dr. Kunle Adebanjo",
 		testimony:
-			"We partnered with Imole on a medical outreach in a remote village, and I was deeply moved by the professionalism and compassion they showed. This is how change truly happens.",
+			"We partnered with Imọlẹ on a medical outreach in a remote village, and I was deeply moved by the professionalism and compassion they showed. This is how change truly happens.",
 		borderColor: "border-secondary",
 		bgColor: "bg-secondary/10",
 		textColor: "text-secondary",
@@ -488,7 +680,7 @@ export const accountDetails = [
 		icon: "/assets/icons/uba.png",
 		bankName: "United Bank of Africa",
 		accountNumber: "2143463056",
-		accountName: "Imole Network Foundations",
+		accountName: "Imọlẹ Progressive Network Foundations",
 		bgColor: "bg-[#DA0D00]/20",
 		textColor: "text-[#DA0D00]",
 		rotate: "lg:-rotate-6",
@@ -497,7 +689,7 @@ export const accountDetails = [
 		icon: "/assets/icons/first-bank.png",
 		bankName: "First Bank of Nigeria",
 		accountNumber: "2143463056",
-		accountName: "Imole Network Foundations",
+		accountName: "Imọlẹ Progressive Network Foundations",
 		bgColor: "bg-[#FFFBFD]/20",
 		textColor: "text-[#02446A]",
 		rotate: "rotate-0",
@@ -506,7 +698,7 @@ export const accountDetails = [
 		icon: "/assets/icons/gtb.jpeg",
 		bankName: "Guaranty Trust Bank",
 		accountNumber: "2143463056",
-		accountName: "Imole Network Foundations",
+		accountName: "Imọlẹ Progressive Network Foundations",
 		bgColor: "bg-[#D84007]/20",
 		textColor: "text-[#D84007]",
 		rotate: "lg:rotate-6",
@@ -514,3 +706,5 @@ export const accountDetails = [
 ];
 
 export const areaOfInterest = ["education", "health", "food", "media", "event"];
+
+export const WEBSITE_URL = "https://imoleprogressivenetwork.org";

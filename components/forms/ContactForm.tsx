@@ -28,6 +28,8 @@ import { Input } from "@/components/ui/input";
 import { subjects } from "@/constants";
 import { useState } from "react";
 import { RequiredAsterisk } from "../shared/RequiredAsterisk";
+import { contactForm } from "@/lib/actions/user/contact.actions";
+import { useRouter } from "next/navigation";
 
 const FormSchema = z.object({
 	name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -46,6 +48,7 @@ const FormSchema = z.object({
 });
 
 export function ContactForm() {
+	const router = useRouter();
 	const [value, setValue] = useState<string | undefined>(undefined);
 	const form = useForm<z.infer<typeof FormSchema>>({
 		resolver: zodResolver(FormSchema),
@@ -58,16 +61,24 @@ export function ContactForm() {
 		},
 	});
 
-	function onSubmit(data: z.infer<typeof FormSchema>) {
-		toast("You submitted the following values", {
-			description: (
-				<pre className="mt-2 w-[320px] rounded-md bg-neutral-950 p-4">
-					<code className="text-white">
-						{JSON.stringify(data, null, 2)}
-					</code>
-				</pre>
-			),
-		});
+	async function onSubmit(data: z.infer<typeof FormSchema>) {
+		try {
+			const contact = {
+				name: data.name,
+				email: data.email,
+				phoneNumber: value,
+				subject: data.subject,
+				message: data.message,
+			};
+			const res = await contactForm(contact);
+
+			if (res?.status == 400) return toast.error(res?.message);
+
+			toast.success(res?.message);
+			router.push(`/success-contact?id=${res?.contact?._id}`);
+		} catch (error: any) {
+			toast.error(error.message || "An error occurred!");
+		}
 	}
 
 	return (

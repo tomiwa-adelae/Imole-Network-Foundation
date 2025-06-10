@@ -225,8 +225,8 @@ import { useState, useRef, useId, useEffect } from "react";
 
 interface SlideData {
 	title: string;
-	description: string;
-	image: string;
+	description: any;
+	image: any;
 }
 
 interface SlideProps {
@@ -317,7 +317,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
 							opacity: current === index ? 1 : 0.5,
 						}}
 						alt={title}
-						src={image}
+						src={image[0]}
 						onLoad={imageLoaded}
 						loading="eager"
 						decoding="sync"
@@ -336,11 +336,11 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
 							: "opacity-0 invisible"
 					}`}
 				>
-					<h2 className="text-xl lg:text-3xl font-semibold relative">
+					<h2 className="text-xl lg:text-3xl font-semibold relative line-clamp-2">
 						{title}
 					</h2>
-					<h4 className="text-gray-100 font-medium text-sm lg:text-base mt-1">
-						{description}
+					<h4 className="text-gray-100 font-medium text-sm lg:text-base mt-1 line-clamp-2">
+						{description[0]}
 					</h4>
 				</article>
 			</li>

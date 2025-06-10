@@ -6,11 +6,11 @@ import { Testimonials } from "@/components/shared/Testimonials";
 import { ImageShowcase } from "@/components/shared/ImageShowcase";
 
 export const metadata: Metadata = {
-	title: "Blog | Stories & Updates from Imole Network Foundation",
+	title: "Blog | Stories & Updates from Imọlẹ Progressive Network Foundation",
 	description:
 		"Stay updated with our latest projects, impact stories, community events, and inspiring tales of hope and transformation across Nigeria.",
 	keywords:
-		"Imole Foundation blog, Nigerian NGO news, charity stories Nigeria, nonprofit updates, humanitarian blog",
+		"Imọlẹ Progressive Foundation blog, Nigerian NGO news, charity stories Nigeria, nonprofit updates, humanitarian blog",
 };
 
 const page = () => {

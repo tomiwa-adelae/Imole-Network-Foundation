@@ -7,11 +7,11 @@ import { Testimonials } from "@/components/shared/Testimonials";
 import { VolunteeringWays } from "@/components/VolunteeringWays";
 
 export const metadata: Metadata = {
-	title: "Become a Volunteer | Join the Imole Network Foundation Family",
+	title: "Become a Volunteer | Join the Imọlẹ Progressive Network Foundation Family",
 	description:
-		"Volunteer with Imole Network Foundation and be part of real impact in education, health, and food relief efforts across Nigerian communities.",
+		"Volunteer with Imọlẹ Progressive Network Foundation and be part of real impact in education, health, and food relief efforts across Nigerian communities.",
 	keywords:
-		"Volunteer Nigeria, join NGO, help community Nigeria, Imole volunteer program, nonprofit service Nigeria",
+		"Volunteer Nigeria, join NGO, help community Nigeria, Imọlẹ volunteer program, nonprofit service Nigeria",
 };
 
 const page = () => {
@@ -25,8 +25,8 @@ const page = () => {
 				<p className="text-base my-6 leading-relaxed">
 					Volunteers are the heart of our mission. Whether you're a
 					student, professional, retiree, or simply someone who wants
-					to make a difference, there’s a place for you at Imole
-					Network Foundation.
+					to make a difference, there’s a place for you at Imọlẹ
+					Progressive Network Foundation.
 				</p>
 			</Showcase>
 			<VolunteeringWays />

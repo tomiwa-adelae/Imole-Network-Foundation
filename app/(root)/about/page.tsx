@@ -13,11 +13,11 @@ import { DonateCTA } from "@/components/DonateCTA";
 import { Testimonials } from "@/components/shared/Testimonials";
 
 export const metadata: Metadata = {
-	title: "About Us | Imole Network Foundation – Who We Are & What We Do",
+	title: "About Us | Imọlẹ Progressive Network Foundation – Who We Are & What We Do",
 	description:
-		"Learn about Imole Network Foundation’s mission, vision, goals, and the heart behind our service to Nigerian communities. Together, we are the light in people's darkest moments.",
+		"Learn about Imọlẹ Progressive Network Foundation’s mission, vision, goals, and the heart behind our service to Nigerian communities. Together, we are the light in people's darkest moments.",
 	keywords:
-		"About Imole Foundation, Nigerian charity, nonprofit goals, mission and vision, humanitarian efforts, NGO Nigeria",
+		"About Imọlẹ Progressive Foundation, Nigerian charity, nonprofit goals, mission and vision, humanitarian efforts, NGO Nigeria",
 };
 
 const page = () => {

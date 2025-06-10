@@ -19,12 +19,12 @@ export const AboutDetails = () => {
 						</h2>
 						<div className="space-y-2 text-base mt-2 leading-relaxed">
 							<p>
-								At Imole Network Foundation, we are a Nigerian
-								nonprofit dedicated to restoring dignity and
-								hope to those who need it most. “Imole,” meaning
-								light in Yoruba, represents our belief that even
-								the smallest act of kindness can light up a
-								life.
+								At Imọlẹ Progressive Network Foundation, we are
+								a Nigerian nonprofit dedicated to restoring
+								dignity and hope to those who need it most.
+								“Imọlẹ,” meaning light in Yoruba, represents our
+								belief that even the smallest act of kindness
+								can light up a life.
 							</p>
 							<p>
 								We serve marginalized communities across Nigeria

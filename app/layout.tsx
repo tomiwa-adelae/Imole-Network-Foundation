@@ -11,15 +11,29 @@ const dmsans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-	title: "Imole Network Foundation | Serving Humanity with Love and Light",
+	title: "Imọlẹ Progressive Network Foundation | Serving Humanity with Love and Light",
 	description:
-		"Imole Network Foundation is a Nigerian non-profit dedicated to empowering communities through education, health support, and food relief. Join us in serving people and changing lives.",
+		"Imọlẹ Progressive Network Foundation is a Nigerian non-profit dedicated to empowering communities through education, health support, and food relief. Join us in serving people and changing lives.",
 	keywords:
-		"Imole Foundation, Nigerian NGO, community support, nonprofit in Nigeria, education charity, health outreach, food relief, humanitarian organization Nigeria",
+		"Imọlẹ Foundation, Nigerian NGO, community support, nonprofit in Nigeria, education charity, health outreach, food relief, humanitarian organization Nigeria",
 	openGraph: {
-		images: "/assets/opengraph.png",
+		title: "Imọlẹ Progressive Network Foundation",
+		description:
+			"Empowering communities in Nigeria through education, healthcare, and food relief.",
+		url: "https://imoleprogressivenetwork.org",
+		siteName: "Imọlẹ Foundation",
+		images: [
+			{
+				url: "/assets/opengraph.png", // ✅ Relative to metadataBase
+				width: 1200,
+				height: 630,
+				alt: "Imọlẹ Foundation OG Image",
+			},
+		],
+		locale: "en_US",
+		type: "website",
 	},
-	metadataBase: new URL("http://imolefoundation.vercel.app"),
+	metadataBase: new URL("https://imoleprogressivenetwork.org"), // ✅ Use your live domain
 };
 
 export default function RootLayout({
@@ -29,21 +43,6 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<Head>
-				<meta property="og:image" content="/opengraph.png" />
-				<meta property="og:image" content="/assets/opengraph.png" />
-				<meta
-					name="viewport"
-					content="width=device-width, initial-scale=1.0, user-scalable=no"
-				/>
-				<meta
-					data-n-head="ssr"
-					data-hid="viewport"
-					name="viewport"
-					content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1"
-				/>
-				<meta name="robots" content="noindex, nofollow" />
-			</Head>
 			<body className={`${dmsans.className} antialiased`}>
 				{children}
 				<Toaster />

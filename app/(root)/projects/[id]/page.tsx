@@ -15,10 +15,11 @@ const page = async ({ params }: { params: any }) => {
 
 	// Optional: Handle case where ID is not found
 	if (!details) redirect("/not-found.tsx");
+
 	return (
 		<div className="relative">
 			<Header />
-			<ImageShowcase image={details.image} />
+			<ImageShowcase image={details.image[0]} />
 			<ProjectDetails details={details} />
 			<DonateCTA />
 			<OurVolunteers />

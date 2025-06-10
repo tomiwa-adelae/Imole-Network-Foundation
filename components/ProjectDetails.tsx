@@ -3,6 +3,7 @@ import React from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { Heart } from "lucide-react";
+import Image from "next/image";
 
 export const ProjectDetails = ({ details }: { details: any }) => {
 	return (
@@ -14,51 +15,40 @@ export const ProjectDetails = ({ details }: { details: any }) => {
 					</h2>
 					<div className="space-y-4 mt-3">
 						<p className="text-base leading-relaxed">
-							{details.description}
-							<br />
-							Second, use lorem ipsum if you think placeholder
-							text will distracting. in voluptate velit esse.
-							Cursus libero viverra. One of the most remarkable
-							applications of AI in healthcare is in diagnostics.
-							Machine and learning algorithms are capable of
-							analyzing vast amounts of medical data with speed to
-							unprecedente speed and accuracy. This has led to
-							earlier and more precise disease speed detection,
-							greatly enhancing the chances of successful
-							treatment.
+							{details.overview}
 						</p>
-						<p className="text-base leading-relaxed">
-							When to Use Lorem Ipsum generally, lorem ipsum is
-							best suited to keeping template fo looking bare or
-							minimizing the distractions of the draft copy.
-							<br />
-							Second, use lorem ipsum if you think placeholder
-							text will distracting. in voluptate velit esse.
-							Cursus libero viverra. One of the most remarkable
-							applications of AI in healthcare is in diagnostics.
-							Machine and learning algorithms are capable of
-							analyzing vast amounts of medical data with speed to
-							unprecedente speed and accuracy. This has led to
-							earlier and more precise disease speed detection,
-							greatly enhancing the chances of successful
-							treatment.
-						</p>
-						<p className="text-base leading-relaxed">
-							When to Use Lorem Ipsum generally, lorem ipsum is
-							best suited to keeping template fo looking bare or
-							minimizing the distractions of the draft copy.
-							<br />
-							Second, use lorem ipsum if you think placeholder
-							text will distracting. in voluptate velit esse.
-							Cursus libero viverra. One of the most remarkable
-							applications of AI in healthcare is in diagnostics.
-							Machine and learning algorithms are capable of
-							analyzing vast amounts of medical data with speed to
-							unprecedente speed and accuracy. This has led to
-							earlier and more precise disease speed detection,
-							greatly enhancing the chances of successful
-							treatment.
-						</p>
+						{details.description.map(
+							(description: any, index: string) => (
+								<p
+									className="text-base leading-relaxed"
+									key={index}
+								>
+									{description}
+								</p>
+							)
+						)}
+						{details.dedication.map(
+							(dedication: any, index: string) => (
+								<p
+									className="text-base leading-relaxed"
+									key={index}
+								>
+									{dedication}
+								</p>
+							)
+						)}
+					</div>
+					<div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+						{details.image.map((image: string, index: string) => (
+							<Image
+								key={index}
+								src={image}
+								alt={details.title}
+								width={1000}
+								height={1000}
+								className="aspect-auto size-full rounded-xl object-cover"
+							/>
+						))}
 					</div>
 					<div className="mt-6">
 						<Button asChild size="lg">
@@ -80,11 +70,11 @@ export const ProjectDetails = ({ details }: { details: any }) => {
 							</div>
 							<div className="flex items-center justify-between gap-4 text-sm md:text-base text-gray-100">
 								<p>Author:</p>
-								<p className="text-white">Admin</p>
+								<p className="text-white">{details.author}</p>
 							</div>
 							<div className="flex items-center justify-between gap-4 text-sm md:text-base text-gray-100">
 								<p>Date:</p>
-								<p className="text-white">25 February, 2025</p>
+								<p className="text-white">{details.date}</p>
 							</div>
 						</div>
 						<div className="flex items-center text-primary justify-start gap-4 mt-6">

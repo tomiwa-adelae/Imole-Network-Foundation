@@ -19,8 +19,8 @@ export const Footer = () => {
 					<div className="col-span-2 md:col-span-1 lg:col-span-2">
 						<Logo />
 						<p className="transition-all hidden md:block mt-8 font-medium text-sm">
-							&copy; {year} Imole Network Foundations. All rights
-							reserved.
+							&copy; {year} Imọlẹ Progressive Network Foundations.
+							All rights reserved.
 						</p>
 					</div>
 					{footerDetails.map(({ title, links }, index) => (
@@ -68,8 +68,8 @@ export const Footer = () => {
 					))}
 				</div>
 				<p className="transition-all mt-8 md:hidden font-medium text-sm">
-					&copy; {year} Imole Network Foundations. All rights
-					reserved.
+					&copy; {year} Imọlẹ Progressive Network Foundations. All
+					rights reserved.
 				</p>
 			</div>
 		</footer>

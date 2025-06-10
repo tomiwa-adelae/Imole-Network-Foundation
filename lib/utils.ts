@@ -24,3 +24,7 @@ export const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
 		event.preventDefault();
 	}
 };
+
+export const handleError = (error: unknown) => {
+	console.log(error);
+};

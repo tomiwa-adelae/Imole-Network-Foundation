@@ -16,14 +16,14 @@ export const ServingOthers = () => {
 							</span>
 						</h2>
 						<p className="text-base my-6 leading-relaxed">
-							At Imole Network Foundation, our purpose is rooted
-							in compassion and community. We believe true impact
-							comes from selfless service and genuine connection.
-							From rural education to healthcare outreach, we go
-							where the need is greatest. Every act of kindness is
-							a step toward a stronger, more hopeful Nigeria.
-							Serving people isn’t just what we do but it’s who we
-							are.
+							At Imọlẹ Progressive Network Foundation, our purpose
+							is rooted in compassion and community. We believe
+							true impact comes from selfless service and genuine
+							connection. From rural education to healthcare
+							outreach, we go where the need is greatest. Every
+							act of kindness is a step toward a stronger, more
+							hopeful Nigeria. Serving people isn’t just what we
+							do but it’s who we are.
 						</p>
 						<Button variant="secondary" asChild size="lg">
 							<Link href="/volunteer">Become a Volunteer</Link>

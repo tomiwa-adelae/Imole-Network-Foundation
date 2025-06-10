@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { DonateCTA } from "@/components/DonateCTA";
+import { OurLeadership } from "@/components/OurLeadership";
 
 const page = () => {
 	return (
@@ -25,8 +26,8 @@ const page = () => {
 					hardship.
 				</h1>
 				<p className="text-base my-6 leading-relaxed">
-					Imole Network Foundation is dedicated to uplifting
-					undeserved Nigerian communities through education,
+					Imọlẹ Progressive Network Foundation is dedicated to
+					uplifting undeserved Nigerian communities through education,
 					healthcare, and social development initiatives.
 				</p>
 				<Button variant="secondary" asChild size="lg">
@@ -39,6 +40,7 @@ const page = () => {
 			<OurProjects />
 			<CTA />
 			<GalleryMarquee />
+			<OurLeadership />
 			<DonateCTA />
 			<Testimonials />
 			<HereToHelp />
