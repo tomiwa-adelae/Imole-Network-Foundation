@@ -24,7 +24,7 @@ export const Logo = () => {
 				Imọlẹ progressive
 				<br />
 				<span className="text-base">
-					Network <span className="hidden md:block">Foundation</span>
+					Network
 				</span>
 			</h2>
 		</Link>
