@@ -72,7 +72,7 @@ export const GalleryMarquee = () => {
 
 			<div className="flex mt-8 items-center justify-center">
 				<Button variant={"white"} asChild size="lg">
-					<Link href="/gallery">Check out gallery</Link>
+					<Link href="/gallery">Check our gallery</Link>
 				</Button>
 			</div>
 
