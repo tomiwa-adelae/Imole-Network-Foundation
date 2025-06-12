@@ -31,6 +31,7 @@ import Image from "next/image";
 import { RequiredAsterisk } from "../shared/RequiredAsterisk";
 import { formatMoneyInput, handleKeyDown } from "@/lib/utils";
 import { Heart } from "lucide-react";
+// import { usePaystackPayment } from "react-paystack";
 
 const FormSchema = z.object({
 	name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -39,9 +40,6 @@ const FormSchema = z.object({
 		.email("Invalid email address."),
 	type: z.string({
 		required_error: "Donation type is required.",
-	}),
-	message: z.string().min(10, {
-		message: "Message must be at least 10 characters.",
 	}),
 	amount: z.string().min(2, { message: "Price is required." }),
 });
@@ -54,7 +52,6 @@ export function DonateForm() {
 			name: "",
 			email: "",
 			type: "",
-			message: "",
 		},
 	});
 
@@ -95,16 +92,66 @@ export function DonateForm() {
 		}
 	};
 
-	function onSubmit(data: z.infer<typeof FormSchema>) {
-		toast("You submitted the following values", {
-			description: (
-				<pre className="mt-2 w-[320px] rounded-md bg-neutral-950 p-4">
-					<code className="text-white">
-						{JSON.stringify(data, null, 2)}
-					</code>
-				</pre>
-			),
-		});
+	async function onSubmit(data: z.infer<typeof FormSchema>) {
+		// try {
+		// 	// Move this hook out of the handleSubmit function
+		// 	const config = {
+		// 		reference: new Date().getTime().toString(),
+		// 		email: data.email,
+		// 		amount: Number(data.amount) * 100, // Convert to kobo
+		// 		publicKey: process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY!,
+		// 		metadata: {
+		// 			name: data.name,
+		// 			custom_fields: [
+		// 				{
+		// 					display_name: "Full Name",
+		// 					variable_name: "full_name",
+		// 					value: data.name,
+		// 				},
+		// 			],
+		// 		},
+		// 	};
+		// 	const onSuccess = async (reference: any) => {
+		// 		try {
+		// 			const details = {
+		// 				spaceId,
+		// 				userId,
+		// 				trxref: reference.trxref,
+		// 				transactionId: reference.transaction,
+		// 				paymentStatus:
+		// 					reference.status === "success" ? "paid" : "failed",
+		// 				bookingStatus: "confirmed",
+		// 				noOfHours,
+		// 				noOfWeeks,
+		// 				noOfDays,
+		// 				noOfMonths,
+		// 				noOfUsers,
+		// 				totalAmount: totalPrice,
+		// 				bookingStartDate,
+		// 				bookingEndDate,
+		// 				bookingType: booking,
+		// 			};
+		// 			const res = await createBooking({ ...details });
+		// 			if (res.status === 400) return toast.error(res.message);
+		// 			toast.success(res.message);
+		// 			setLoading(false);
+		// 			router.push(
+		// 				`/spaces/${spaceId}/book/success?id=${res?.booking?._id}`
+		// 			);
+		// 		} catch (error) {
+		// 			setLoading(false);
+		// 			toast.error("An error occurred! Try again later.");
+		// 		} finally {
+		// 			setLoading(false);
+		// 		}
+		// 	};
+		// 	const onClose = () => {
+		// 		toast.error("An error occurred! Try again later");
+		// 	};
+		// 	const initializePayment = usePaystackPayment(config);
+		// } catch (error) {}
+		toast.success("Donation successful");
+		// router.push')
 	}
 
 	return (

@@ -4,13 +4,13 @@ import React from "react";
 
 export const BlogBox = ({
 	title,
-	excerpt,
+	overview,
 	image,
 	id,
 }: {
 	id: string;
 	title: string;
-	excerpt: string;
+	overview: string;
 	image: string;
 }) => {
 	return (
@@ -30,7 +30,7 @@ export const BlogBox = ({
 					{title}
 				</Link>
 				<p className="mt-2 text-base text-muted-foreground line-clamp-3">
-					{excerpt}
+					{overview}
 				</p>
 				<Link
 					className="py-4 text-secondary font-semibold block"

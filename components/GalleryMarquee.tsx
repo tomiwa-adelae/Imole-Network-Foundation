@@ -4,6 +4,8 @@ import { useState } from "react";
 import { galleryImages } from "@/constants";
 import "yet-another-react-lightbox/styles.css";
 import Lightbox from "yet-another-react-lightbox";
+import Link from "next/link";
+import { Button } from "./ui/button";
 
 export const GalleryMarquee = () => {
 	const [open, setOpen] = useState(false);
@@ -16,34 +18,64 @@ export const GalleryMarquee = () => {
 
 	return (
 		<div
-			className="bg-scroll bg-[#F3EDDA] bg-no-repeat bg-contain bg-top-right py-16 relative"
+			className="bg-scroll bg-[#660066] bg-no-repeat bg-contain bg-top-right py-16 relative"
 			style={{
 				backgroundImage: `url(/assets/images/line-bg.png)`,
 			}}
 		>
 			<div className="container">
-				<h2 className="font-semibold text-center text-3xl md:text-4xl lg:text-5xl">
+				<h2 className="font-semibold text-white text-center text-3xl md:text-4xl lg:text-5xl">
 					Our Gallery
 				</h2>
 			</div>
-
-			<div className="marquee-section relative overflow-hidden mt-8">
-				<div className="whitespace-nowrap overflow-hidden">
-					<div className="marquee-content will-change-transform flex items-center justify-between gap-4 group overflow-hidden">
-						{galleryImages.map(({ src }, index: any) => (
+			<div className="marquee-section relative overflow-hidden mt-8 space-y-8">
+				{/* Top Marquee - Left Direction */}
+				<div className="marquee-track flex w-max animate-marquee-left">
+					{[...galleryImages, ...galleryImages].map(
+						({ src }, index) => (
 							<Image
-								key={index}
+								key={`top-${index}`}
 								src={src}
-								alt={"Gallery image"}
+								alt="Gallery image"
 								width={1000}
 								height={1000}
-								className="cursor-pointer rounded-lg size-[350px] object-cover transition-all hover:scale-[102%]"
-								onClick={() => handleOpen(index)}
+								className="cursor-pointer rounded-lg size-[220px] md:size-[280px] lg:size-[350px] object-cover transition-all hover:scale-[102%] mx-2"
+								onClick={() =>
+									handleOpen(index % galleryImages.length)
+								}
 							/>
-						))}
-					</div>
+						)
+					)}
+				</div>
+
+				<div className="... opacity-90 drop-shadow-md" />
+
+				{/* Bottom Marquee - Right Direction */}
+				<div className="marquee-track flex w-max animate-marquee-right">
+					{[...galleryImages, ...galleryImages].map(
+						({ src }, index) => (
+							<Image
+								key={`bottom-${index}`}
+								src={src}
+								alt="Gallery image"
+								width={1000}
+								height={1000}
+								className="cursor-pointer rounded-lg size-[220px] md:size-[280px] lg:size-[350px] object-cover transition-all hover:scale-[102%] mx-2"
+								onClick={() =>
+									handleOpen(index % galleryImages.length)
+								}
+							/>
+						)
+					)}
 				</div>
 			</div>
+
+			<div className="flex mt-8 items-center justify-center">
+				<Button variant={"white"} asChild size="lg">
+					<Link href="/gallery">Check out gallery</Link>
+				</Button>
+			</div>
+
 			{open && (
 				<Lightbox
 					open={open}

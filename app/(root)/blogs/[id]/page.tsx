@@ -17,7 +17,7 @@ const page = async ({ params }: { params: any }) => {
 	return (
 		<div className="relative">
 			<Header />
-			<ImageShowcase title={details.title} image={details.image} />
+			<ImageShowcase image={details.image[0]} />
 			<BlogDetails details={details} />
 			<DonateCTA />
 			<OurVolunteers />
