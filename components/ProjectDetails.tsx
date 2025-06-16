@@ -11,13 +11,13 @@ export const ProjectDetails = ({ details }: { details: any }) => {
 			<div className="container grid grid-cols-1 lg:grid-cols-6 gap-4">
 				<div className="col-span-1 lg:col-span-4">
 					<h2 className="font-semibold text-2xl lg:text-3xl">
-						{details.title}
+						{details?.title}
 					</h2>
 					<div className="space-y-4 mt-3">
 						<p className="text-base leading-relaxed">
-							{details.overview}
+							{details?.overview}
 						</p>
-						{details.description.map(
+						{details?.description?.map(
 							(description: any, index: string) => (
 								<p
 									className="text-base leading-relaxed"
@@ -27,7 +27,7 @@ export const ProjectDetails = ({ details }: { details: any }) => {
 								</p>
 							)
 						)}
-						{details.dedication.map(
+						{details?.dedication?.map(
 							(dedication: any, index: string) => (
 								<p
 									className="text-base leading-relaxed"
@@ -38,15 +38,27 @@ export const ProjectDetails = ({ details }: { details: any }) => {
 							)
 						)}
 					</div>
+					{details?.videos?.map((video: string, index: string) => (
+						<video key={index} controls preload="none">
+							<source src={video} type="video/mp4" />
+							<track
+								src="/path/to/captions.vtt"
+								kind="subtitles"
+								srcLang="en"
+								label="English"
+							/>
+							Your browser does not support the video tag.
+						</video>
+					))}
 					<div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-						{details.image.map((image: string, index: string) => (
+						{details?.image?.map((image: string, index: string) => (
 							<Image
 								key={index}
 								src={image}
 								alt={details.title}
 								width={1000}
 								height={1000}
-								className="aspect-auto size-full rounded-xl object-cover"
+								className="aspect-square size-full rounded-xl object-cover"
 							/>
 						))}
 					</div>
