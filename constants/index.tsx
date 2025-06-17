@@ -223,6 +223,48 @@ export const CTAs = [
 
 export const latestNews = [
 	{
+		id: "213",
+		title: "Appointment Letters Presented to Local Government Field Coordinators – Ondo North",
+		overview:
+			"Strengthening grassroots leadership is a core part of our strategy at Imole Network Foundation. As part of our commitment to structured impact and local engagement, we officially presented letters of appointment to all field coordinators across the Ondo North Senatorial District.",
+		description: [
+			"The presentation event marked a significant step in expanding our presence and operational efficiency across local governments in the region. Each coordinator received formal documentation of their roles and responsibilities, reinforcing our unified vision for community development.",
+			"These coordinators will serve as key links between the foundation and their respective localities—ensuring better outreach, project monitoring, and active community involvement.",
+		],
+		dedication: [
+			"This moment signifies trust, responsibility, and shared purpose. With our field team now fully mobilized, we are more equipped than ever to extend the light of service across Ondo North and beyond.",
+		],
+		image: [
+			"/assets/images/appointment-1.jpg",
+			"/assets/images/appointment-2.jpg",
+			"/assets/images/appointment-3.jpg",
+			"/assets/images/appointment-4.jpg",
+			"/assets/images/appointment-5.jpg",
+			"/assets/images/appointment-6.jpg",
+			"/assets/images/appointment-7.jpg",
+			"/assets/images/appointment-8.jpg",
+			"/assets/images/appointment-9.jpg",
+			"/assets/images/appointment-10.jpg",
+			"/assets/images/appointment-11.jpg",
+			"/assets/images/appointment-12.jpg",
+			"/assets/images/appointment-13.jpg",
+			"/assets/images/appointment-14.jpg",
+			"/assets/images/appointment-15.jpg",
+			"/assets/images/appointment-16.jpg",
+			"/assets/images/appointment-17.jpg",
+			"/assets/images/appointment-18.jpg",
+			"/assets/images/appointment-19.jpg",
+			"/assets/images/appointment-20.jpg",
+		],
+		videos: [
+			"https://res.cloudinary.com/dh0rc6p1c/video/upload/v1750148983/imole/VID-20250617-WA0035_fij3gi.mp4",
+			"https://res.cloudinary.com/dh0rc6p1c/video/upload/v1750148980/imole/VID-20250617-WA0034_hdzwth.mp4",
+		],
+		category: "Community Development",
+		author: "Engr. Babarinde",
+		date: "17th of June, 2025",
+	},
+	{
 		id: "13",
 		title: "Renovated Classroom Block for Lennon Jubilee High School",
 		overview:
@@ -482,6 +524,66 @@ export const latestNews = [
 
 export const galleryImages = [
 	{
+		src: "/assets/images/appointment-1.jpg",
+	},
+	{
+		src: "/assets/images/appointment-2.jpg",
+	},
+	{
+		src: "/assets/images/appointment-3.jpg",
+	},
+	{
+		src: "/assets/images/appointment-4.jpg",
+	},
+	{
+		src: "/assets/images/appointment-5.jpg",
+	},
+	{
+		src: "/assets/images/appointment-6.jpg",
+	},
+	{
+		src: "/assets/images/appointment-7.jpg",
+	},
+	{
+		src: "/assets/images/appointment-8.jpg",
+	},
+	{
+		src: "/assets/images/appointment-9.jpg",
+	},
+	{
+		src: "/assets/images/appointment-10.jpg",
+	},
+	{
+		src: "/assets/images/appointment-11.jpg",
+	},
+	{
+		src: "/assets/images/appointment-12.jpg",
+	},
+	{
+		src: "/assets/images/appointment-13.jpg",
+	},
+	{
+		src: "/assets/images/appointment-14.jpg",
+	},
+	{
+		src: "/assets/images/appointment-15.jpg",
+	},
+	{
+		src: "/assets/images/appointment-16.jpg",
+	},
+	{
+		src: "/assets/images/appointment-17.jpg",
+	},
+	{
+		src: "/assets/images/appointment-18.jpg",
+	},
+	{
+		src: "/assets/images/appointment-19.jpg",
+	},
+	{
+		src: "/assets/images/appointment-20.jpg",
+	},
+	{
 		src: "/assets/images/lennon-1.jpg",
 	},
 	{
@@ -517,7 +619,6 @@ export const galleryImages = [
 	{
 		src: "/assets/images/gallery1.jpg",
 	},
-
 	{
 		src: "/assets/images/gallery3.jpg",
 	},
@@ -643,7 +744,7 @@ export const subjects = [
 	},
 	{
 		type: "donation",
-		label: "I want to a donation",
+		label: "I want to donation",
 	},
 	{
 		type: "partnership",
@@ -659,7 +760,7 @@ export const subjects = [
 	},
 	{
 		type: "support",
-		label: "I need Help or Support",
+		label: "I need help or support",
 	},
 	{
 		type: "feedback",
@@ -672,6 +773,48 @@ export const subjects = [
 ];
 
 export const ourProjects = [
+	{
+		id: "213",
+		title: "Appointment Letters Presented to Local Government Field Coordinators – Ondo North",
+		overview:
+			"Strengthening grassroots leadership is a core part of our strategy at Imole Network Foundation. As part of our commitment to structured impact and local engagement, we officially presented letters of appointment to all field coordinators across the Ondo North Senatorial District.",
+		description: [
+			"The presentation event marked a significant step in expanding our presence and operational efficiency across local governments in the region. Each coordinator received formal documentation of their roles and responsibilities, reinforcing our unified vision for community development.",
+			"These coordinators will serve as key links between the foundation and their respective localities—ensuring better outreach, project monitoring, and active community involvement.",
+		],
+		dedication: [
+			"This moment signifies trust, responsibility, and shared purpose. With our field team now fully mobilized, we are more equipped than ever to extend the light of service across Ondo North and beyond.",
+		],
+		image: [
+			"/assets/images/appointment-1.jpg",
+			"/assets/images/appointment-2.jpg",
+			"/assets/images/appointment-3.jpg",
+			"/assets/images/appointment-4.jpg",
+			"/assets/images/appointment-5.jpg",
+			"/assets/images/appointment-6.jpg",
+			"/assets/images/appointment-7.jpg",
+			"/assets/images/appointment-8.jpg",
+			"/assets/images/appointment-9.jpg",
+			"/assets/images/appointment-10.jpg",
+			"/assets/images/appointment-11.jpg",
+			"/assets/images/appointment-12.jpg",
+			"/assets/images/appointment-13.jpg",
+			"/assets/images/appointment-14.jpg",
+			"/assets/images/appointment-15.jpg",
+			"/assets/images/appointment-16.jpg",
+			"/assets/images/appointment-17.jpg",
+			"/assets/images/appointment-18.jpg",
+			"/assets/images/appointment-19.jpg",
+			"/assets/images/appointment-20.jpg",
+		],
+		videos: [
+			"https://res.cloudinary.com/dh0rc6p1c/video/upload/v1750148983/imole/VID-20250617-WA0035_fij3gi.mp4",
+			"https://res.cloudinary.com/dh0rc6p1c/video/upload/v1750148980/imole/VID-20250617-WA0034_hdzwth.mp4",
+		],
+		category: "Community Development",
+		author: "Engr. Babarinde",
+		date: "17th of June, 2025",
+	},
 	{
 		id: "13",
 		title: "Renovated Classroom Block for Lennon Jubilee High School",

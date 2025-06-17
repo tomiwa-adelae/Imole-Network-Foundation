@@ -46,7 +46,7 @@ export const OurProjects = () => {
 											<Link
 												href={`/projects/${project?.id}`}
 											>
-												Learn more space
+												Learn more
 											</Link>
 										</Button>
 									</Link>

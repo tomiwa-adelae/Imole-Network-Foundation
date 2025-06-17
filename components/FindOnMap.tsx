@@ -1,4 +1,4 @@
-import { emailAddress, phoneNumber } from "@/constants";
+import { address, emailAddress, phoneNumber } from "@/constants";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 export const FindOnMap = () => {
@@ -17,7 +17,7 @@ export const FindOnMap = () => {
 		},
 		{
 			title: "Visit us",
-			details: "123 main street, Ikeja, Lagos",
+			details: address,
 			bgColor: "bg-[#1BC7ED]",
 			icon: MapPin,
 		},

@@ -25,7 +25,7 @@ export const BlogBox = ({
 			<div className="p-4">
 				<Link
 					href={`/blogs/${id}`}
-					className="hover:text-secondary transition-all font-semibold text-xl"
+					className="hover:text-secondary transition-all font-semibold text-xl line-clamp-2"
 				>
 					{title}
 				</Link>

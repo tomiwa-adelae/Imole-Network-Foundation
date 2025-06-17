@@ -1,11 +1,24 @@
+"use client";
 import { socialLinks } from "@/constants";
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { Heart } from "lucide-react";
 import Image from "next/image";
+import "yet-another-react-lightbox/styles.css";
+import Lightbox from "yet-another-react-lightbox";
 
 export const ProjectDetails = ({ details }: { details: any }) => {
+	const [open, setOpen] = useState(false);
+	const [currentIndex, setCurrentIndex] = useState(0);
+
+	const handleOpen = (index: number) => {
+		setCurrentIndex(index);
+		setOpen(true);
+	};
+
+	const imagesWithSrc = details?.image.map((path: any) => ({ src: path }));
+
 	return (
 		<div className="py-10">
 			<div className="container grid grid-cols-1 lg:grid-cols-6 gap-4">
@@ -38,28 +51,43 @@ export const ProjectDetails = ({ details }: { details: any }) => {
 							)
 						)}
 					</div>
-					{details?.videos?.map((video: string, index: string) => (
-						<video key={index} controls preload="none">
-							<source src={video} type="video/mp4" />
-							<track
-								src="/path/to/captions.vtt"
-								kind="subtitles"
-								srcLang="en"
-								label="English"
-							/>
-							Your browser does not support the video tag.
-						</video>
-					))}
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+						{details?.videos?.map(
+							(video: string, index: string) => (
+								<video
+									key={index}
+									controls
+									preload="none"
+									poster={details?.image[0]} // 👈 Add this line
+								>
+									<source src={video} type="video/mp4" />
+									<track
+										src="/path/to/captions.vtt"
+										kind="subtitles"
+										srcLang="en"
+										label="English"
+									/>
+									Your browser does not support the video tag.
+								</video>
+							)
+						)}
+					</div>
 					<div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-						{details?.image?.map((image: string, index: string) => (
-							<Image
+						{details?.image?.map((image: string, index: any) => (
+							<div
+								className="group relative"
+								onClick={() => handleOpen(index)}
 								key={index}
-								src={image}
-								alt={details.title}
-								width={1000}
-								height={1000}
-								className="aspect-square size-full rounded-xl object-cover"
-							/>
+							>
+								<Image
+									src={image}
+									alt={details.title}
+									width={1000}
+									height={1000}
+									className="aspect-square cursor-pointer size-full rounded-xl object-cover"
+								/>
+								<div className="absolute opacity-0 group-hover:opacity-100 inset-0 transition-all group-hover:bg-black/20 cursor-pointer" />
+							</div>
 						))}
 					</div>
 					<div className="mt-6">
@@ -109,6 +137,14 @@ export const ProjectDetails = ({ details }: { details: any }) => {
 					</div>
 				</div>
 			</div>
+			{open && (
+				<Lightbox
+					open={open}
+					close={() => setOpen(false)}
+					slides={imagesWithSrc}
+					index={currentIndex}
+				/>
+			)}
 		</div>
 	);
 };
