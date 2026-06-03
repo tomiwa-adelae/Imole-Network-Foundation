@@ -14,7 +14,7 @@
 /* Optional: set as default font */
 body {
 	font-family: "ClashDisplay", sans-serif;
-	display: hidden;
+	display: none
 }
 
 @theme inline {
